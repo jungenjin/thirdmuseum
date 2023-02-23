@@ -17,19 +17,39 @@ function Main() {
         </section>
         <section className="content">
             <div className="container-xxl">
-              <div className='container-lg'>
                 <h2 className="display-1 Ptext">Preview</h2>
-                  <div className="g-col-6 Pimg1" style={{background: 'url(/resource/main/Preview1.png)'}}></div>
-                  <div className="g-col-6 Pimg2" style={{background: 'url(/resource/main/Preview2.png)'}}></div>
-                  <div className="g-col-6 Pimg3" style={{background: 'url(/resource/main/Preview3.png)'}}></div>
-                  <div className="g-col-6 Pimg4" style={{background: 'url(/resource/main/Preview4.png)'}}></div>
-                  <div className="g-col-6 Pimg5" style={{background: 'url(/resource/main/Preview5.png)'}}></div>
-                  <div className="g-col-6 Pimg6" style={{background: 'url(/resource/main/Preview6.png)'}}></div>
-                  <div className="g-col-6 Pimg7" style={{background: 'url(/resource/main/Preview7.png)'}}></div>
-                  <div className="g-col-6 Pimg8" style={{background: 'url(/resource/main/Preview8.png)'}}></div>
-                  <div className="g-col-6 Pimg9" style={{background: 'url(/resource/main/Preview9.png)'}}></div>
+                <div className="container-sm">
+                <div class="row-cols-8">
+                <div class="col">
+                  <div className="Pimg1" style={{background: 'url(/resource/main/Preview1.png)' }}></div>
+                  </div>
+                  <div class="col">
+                  <div className=" Pimg2" style={{background: 'url(/resource/main/Preview2.png)'}}></div>
+                  </div>
+                  <div class="col">
+                  <div className=" Pimg3" style={{background: 'url(/resource/main/Preview3.png)'}}></div>
+                  </div>
+                  <div class="col">
+                  <div className=" Pimg4" style={{background: 'url(/resource/main/Preview4.png)'}}></div>
+                  </div>
+                  <div class="col">
+                  <div className=" Pimg5" style={{background: 'url(/resource/main/Preview5.png)'}}></div>
+                  </div>
+                  <div class="col">
+                  <div className=" Pimg6" style={{background: 'url(/resource/main/Preview6.png)'}}></div>
+                  </div>
+                  <div class="col">
+                  <div className=" Pimg7" style={{background: 'url(/resource/main/Preview7.png)'}}></div>
+                  </div>
+                  <div class="col">
+                  <div className=" Pimg8" style={{background: 'url(/resource/main/Preview8.png)'}}></div>
+                  </div>
+                  <div class="col">
+                  <div className=" Pimg9" style={{background: 'url(/resource/main/Preview9.png)'}}></div>
+                  </div>
+                  </div>
+                  </div>
               </div>
-            </div>
         </section>
       </section>
     </div>

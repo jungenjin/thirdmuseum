@@ -11,7 +11,7 @@ body{
   max-width: 100%;
   z-index: -1;
   height: 864px;
-  background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:690px 533px, 733px 536px; background-position:right 0px, left 233px; background-repeat:no-repeat;
+  background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:483px 373px, 513px 375px; background-position:right 0px, left 350px; background-repeat:no-repeat;
 }
 
 .h4{
@@ -19,21 +19,25 @@ body{
   margin-top: 38px !important; 
   margin-left: 30px !important;
   font-family: 'Noto Sans KR' !important;
+  display: flex;
+  justify-content: center;
 }
 .mainText2{
-  font-size: 308px;
-  margin-left: 140px;
+  font-size: 9rem;
   line-height: 250px;
   font-family: 'Playfair Display';
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 .mainText3{
-  font-size: 308px;
-  margin-left: 526px;
-  line-height: 250px;
+  font-size: 9rem;
+  line-height: 150px;
   font-family: 'Playfair Display';
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
 .mainBtn{
@@ -41,82 +45,193 @@ body{
   height: 72px;
   text-align: center;
   background-color: #000;
-  margin-top: 115px;
-  margin-left: 742px;
+  margin-top: 7rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 .mainTextBtn{
   text-decoration: none !important;
   color: #fff !important;
   font-family: 'NotoSansKR';
+  
 }
 
 .content{
   margin-top: 230px;
+  text-align: center;
+  
 }
-
 .Ptext{
  font-family: 'Playfair Display';
  text-align: center;
  padding-bottom: 51px;
 }
-.text-center{
- --bs-gap: 4.8rem;
+.col{
+  display: flex;
+  justify-content: center;
 }
-
 
 .Pimg1{
- width: 578px;
- height: 722px;
- margin-bottom: 78px !important;
- float: left;
-}
-.Pimg2{
- width: 572px;
- height: 381px;
- margin-bottom: 78px !important;
- float: right;
-}
-.Pimg3{
- width: 572px;
- height: 383px;
- margin-bottom: 78px !important;
- float: right;
-}
-.Pimg4{
+  width: 578px;
+  height: 722px;
+  margin-bottom: 78px !important;
+  text-align: center;
+  }
+  .Pimg2{
+  width: 572px;
+  height: 381px;
+  margin-bottom: 78px !important;
+  text-align: center;
+  }
+  .Pimg3{
+  width: 572px;
+  height: 383px;
+  margin-bottom: 78px !important;
+  }
+  .Pimg4{
 
- width: 578px;
- height: 730px;
- margin-bottom: 78px !important;
- float: left;
-}
-.Pimg5{
- margin-bottom: 78px !important;
- width: 573px;
- height: 716px;
- float: right;
-}
-.Pimg6{
- margin-bottom: 78px !important;
- width: 578px;
- height: 376px;
- float: left;
+  width: 578px;
+  height: 730px;
+  margin-bottom: 78px !important;
+  }
+  .Pimg5{
+  margin-bottom: 78px !important;
+  width: 573px;
+  height: 716px;
+  }
+  .Pimg6{
+  margin-bottom: 78px !important;
+  width: 578px;
+  height: 376px;
 
-}
-.Pimg7{
- margin-bottom: 78px !important;
- width: 578px;
- height: 608px;
- float: right;
-}
-.Pimg8{
- margin-bottom: 78px !important;
- width: 578px;
- height: 724px;
- float: left
-}
-.Pimg9{
- margin-bottom: 78px !important;
- width: 579px;
- height: 385px;
- float: right;
+  }
+  .Pimg7{
+  margin-bottom: 78px !important;
+  width: 578px;
+  height: 608px;
+  }
+  .Pimg8{
+  margin-bottom: 78px !important;
+  width: 578px;
+  height: 724px;
+  }
+  .Pimg9{
+  margin-bottom: 78px !important;
+  width: 579px;
+  height: 385px;
+  }
+
+@media(min-width: 992px){
+
+
+  .main{
+    max-width: 100%;
+    z-index: -1;
+    height: 864px;
+    background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:690px 533px, 733px 536px; background-position:right 0px, left 233px; background-repeat:no-repeat;
+  }
+  
+  .h4{
+    font-weight: 500 !important;
+    margin-top: 38px !important; 
+    margin-left: 30px !important;
+    font-family: 'Noto Sans KR' !important;
+    display: block;
+  }
+  .mainText2{
+    font-size: 19rem;
+    margin-left: 140px;
+    line-height: 250px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    display: block;
+  }
+  
+  .mainText3{
+    font-size: 19rem;
+    margin-left: 526px;
+    line-height: 250px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    display: block;
+  }
+  
+  .mainBtn{
+    width: 327px;
+    height: 72px;
+    text-align: center;
+    background-color: #000;
+    margin-top: 115px;
+    margin-left: 742px;
+    display: block;
+    position: static;
+    transform:none;
+  }
+  .mainTextBtn{
+    text-decoration: none !important;
+    color: #fff !important;
+    font-family: 'NotoSansKR';
+  }
+  .col {
+    display: block;
+    margin: 0 38px;
+  }
+  .Pimg1{
+  width: 578px;
+  height: 722px;
+  margin-bottom: 78px !important;
+  float: left;
+  }
+  .Pimg2{
+  width: 572px;
+  height: 381px;
+  margin-bottom: 78px !important;
+  float: right;
+  }
+  .Pimg3{
+  width: 572px;
+  height: 383px;
+  margin-bottom: 78px !important;
+  float: right;
+  }
+  .Pimg4{
+
+  width: 578px;
+  height: 730px;
+  margin-bottom: 78px !important;
+  float: left;
+  }
+  .Pimg5{
+  margin-bottom: 78px !important;
+  width: 573px;
+  height: 716px;
+  float: right;
+  }
+  .Pimg6{
+  margin-bottom: 78px !important;
+  width: 578px;
+  height: 376px;
+  float: left;
+
+  }
+  .Pimg7{
+  margin-bottom: 78px !important;
+  width: 578px;
+  height: 608px;
+  float: right;
+  }
+  .Pimg8{
+  margin-bottom: 78px !important;
+  width: 578px;
+  height: 724px;
+  float: left
+  }
+  .Pimg9{
+  margin-bottom: 78px !important;
+  width: 579px;
+  height: 385px;
+  float: right;
+  }
 }
