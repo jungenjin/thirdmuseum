@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BoardService from './service';
-import NoticeVisual from './noticevisual';
+import SubVisual from '../../common/SubVisual';
+import '../../style/common.css';
 
 class NoticeList extends Component {
     constructor(props) {
@@ -36,31 +37,27 @@ class NoticeList extends Component {
     render() {
         return (
             <>
-            <NoticeVisual />
-            <div className='contianer-xxl'>
-                <div className ="row">
-                    <table className="table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th>번호</th>
-                                <th>제목 </th>
-                            </tr>
-                        </thead>
+            <SubVisual name={'공지사항'} imgName={'notice'} />
+            <div className='container-xxl'>
+                <div className ="table-responsive-sm">
+                    <table className="table table-hover">
                         <tbody>
                             {
                                 this.state.boards.map(
                                     board => 
                                     <tr key = {board.ntcNo}>
-                                        <td> {board.ntcNo} </td>
-                                        <td><a onClick = {() => this.readBoard(board.ntcNo)}>{board.ntcTitle}</a></td>
+                                        <td className='pt-4 pb-4 text-center' style={{width:'80px'}}> {board.ntcNo} </td>
+                                        <td className='pt-4 pb-4'><a onClick = {() => this.readBoard(board.ntcNo)} className='h5 text-dark'>{board.ntcTitle}</a></td>
                                     </tr>
                                 )
                             }
                         </tbody>
                     </table>
                 </div>
-                <div className = "row">
-                    <button className="btn btn-primary" onClick={this.createBoard}>새 글 쓰기</button>
+                <div className="row justify-content-end">
+                    <div className='col-auto'>
+                    <button className="btn btn-secondary btn-lg" onClick={this.createBoard}>새 글 쓰기</button>
+                    </div>
                 </div>
             </div>
             </>
