@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{
+  font-family: 'NotoSansKR', 'PlayfairDisplay', serif, sans-serif;
+}
+
+.atth1 {
+    text-align: center;
+    margin-top: 167px;
+    margin-bottom: 68px;
+    font-family: 'NotoSansKR';
+    font-weight: bold;
+    font-size: 80px;
+}
