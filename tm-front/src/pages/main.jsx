@@ -19,15 +19,15 @@ function Main() {
             <div className="container-xxl">
               <div className='container-lg'>
                 <h2 className="h2">Preview</h2>
-                  <div className="Pimg1"></div>
-                  <div className="Pimg2"></div>
-                  <div className="Pimg3"></div>
-                  <div className="Pimg4"></div>
-                  <div className="Pimg5"></div>
-                  <div className="Pimg6"></div>
-                  <div className="Pimg7"></div>
-                  <div className="Pimg8"></div>
-                  <div className="Pimg9"></div>
+                  <div className="Pimg1" style={{background: 'url(/resource/main/Preview1.png)'}}></div>
+                  <div className="Pimg2" style={{background: 'url(/resource/main/Preview2.png)'}}></div>
+                  <div className="Pimg3" style={{background: 'url(/resource/main/Preview3.png)'}}></div>
+                  <div className="Pimg4" style={{background: 'url(/resource/main/Preview4.png)'}}></div>
+                  <div className="Pimg5" style={{background: 'url(/resource/main/Preview5.png)'}}></div>
+                  <div className="Pimg6" style={{background: 'url(/resource/main/Preview6.png)'}}></div>
+                  <div className="Pimg7" style={{background: 'url(/resource/main/Preview7.png)'}}></div>
+                  <div className="Pimg8" style={{background: 'url(/resource/main/Preview8.png)'}}></div>
+                  <div className="Pimg9" style={{background: 'url(/resource/main/Preview9.png)'}}></div>
               </div>
             </div>
         </section>
