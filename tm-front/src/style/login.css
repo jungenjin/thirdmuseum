@@ -1,0 +1,50 @@
+/*네이버 로그인 없는버전*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body{
+  font-family: 'NotoSansKR', 'PlayfairDisplay', serif, sans-serif;
+}
+
+.loginh1 {
+    text-align: center;
+    margin-top: 167px;
+    margin-bottom: 68px;
+    font-family: 'NotoSansKR';
+    font-weight: bold;
+    font-size: 80px;
+}
+
+form{
+    text-align: center;
+}
+#id{
+    margin-bottom: 60px;
+}
+input{
+    width: 35%;
+    padding: 20px;
+}
+
+.btnlogin{
+    width: 35%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    height: 100px;
+    background-color: #535459;
+    color: white;
+    font-size: 32px;
+    border: none;
+
+}
+.btnnaverlogin{
+    width: 35%;
+    height: 100px;
+    margin-top: 60px;
+    background-color: #03C75A !important;
+    color: white;
+    font-size: 32px;
+    border: none;
+}
+
+.Nv{
+    font-weight: 900;
+}
