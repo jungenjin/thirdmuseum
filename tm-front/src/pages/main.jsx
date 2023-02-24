@@ -1,5 +1,3 @@
-// import './App.css';
-import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap';
 import '../style/main.css';
 
 function Main() {
@@ -19,37 +17,37 @@ function Main() {
             <div className="container-xxl">
                 <h2 className="display-1 Ptext">Preview</h2>
                 <div className="container-sm">
-                <div class="row-cols-8">
-                <div class="col">
-                  <div className="Pimg1" style={{background: 'url(/resource/main/Preview1.png)' }}></div>
+                  <div class="row-cols-8">
+                    <div class="col">
+                      <div className="Pimg1" style={{background: 'url(/resource/main/Preview1.png)' }}></div>
+                    </div>
+                    <div class="col">
+                      <div className=" Pimg2" style={{background: 'url(/resource/main/Preview2.png)'}}></div>
+                    </div>
+                    <div class="col">
+                      <div className=" Pimg3" style={{background: 'url(/resource/main/Preview3.png)'}}></div>
+                    </div>
+                    <div class="col">
+                      <div className=" Pimg4" style={{background: 'url(/resource/main/Preview4.png)'}}></div>
+                    </div>
+                    <div class="col">
+                      <div className=" Pimg5" style={{background: 'url(/resource/main/Preview5.png)'}}></div>
+                    </div>
+                    <div class="col">
+                      <div className=" Pimg6" style={{background: 'url(/resource/main/Preview6.png)'}}></div>
+                    </div>
+                    <div class="col">
+                      <div className=" Pimg7" style={{background: 'url(/resource/main/Preview7.png)'}}></div>
+                    </div>
+                    <div class="col">
+                      <div className=" Pimg8" style={{background: 'url(/resource/main/Preview8.png)'}}></div>
+                    </div>
+                    <div class="col">
+                      <div className=" Pimg9" style={{background: 'url(/resource/main/Preview9.png)'}}></div>
+                    </div>
                   </div>
-                  <div class="col">
-                  <div className=" Pimg2" style={{background: 'url(/resource/main/Preview2.png)'}}></div>
-                  </div>
-                  <div class="col">
-                  <div className=" Pimg3" style={{background: 'url(/resource/main/Preview3.png)'}}></div>
-                  </div>
-                  <div class="col">
-                  <div className=" Pimg4" style={{background: 'url(/resource/main/Preview4.png)'}}></div>
-                  </div>
-                  <div class="col">
-                  <div className=" Pimg5" style={{background: 'url(/resource/main/Preview5.png)'}}></div>
-                  </div>
-                  <div class="col">
-                  <div className=" Pimg6" style={{background: 'url(/resource/main/Preview6.png)'}}></div>
-                  </div>
-                  <div class="col">
-                  <div className=" Pimg7" style={{background: 'url(/resource/main/Preview7.png)'}}></div>
-                  </div>
-                  <div class="col">
-                  <div className=" Pimg8" style={{background: 'url(/resource/main/Preview8.png)'}}></div>
-                  </div>
-                  <div class="col">
-                  <div className=" Pimg9" style={{background: 'url(/resource/main/Preview9.png)'}}></div>
-                  </div>
-                  </div>
-                  </div>
-              </div>
+                </div>
+            </div>
         </section>
       </section>
     </div>

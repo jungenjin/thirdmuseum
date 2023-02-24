@@ -1,6 +1,5 @@
 // import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap';
 import '../style/common.css';
 
 function Footer() {
