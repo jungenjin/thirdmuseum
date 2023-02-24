@@ -2,6 +2,8 @@
 import React, { useEffect } from "react";
 import cn from "classnames";
 import '../style/location.css'
+
+
 function Location() {
     useEffect(()=>{
         var container = document.getElementById('map');
@@ -26,13 +28,11 @@ function Location() {
       
         })
     return(
-        
         <section>
-            <div class="location_title">
-                <p>찾아오시는 길</p>
-            </div>
+            <SubVisual name={'오시는길'} imgName='' />
+                <h1>찾아오시는 길</h1>
             <div className="location_wrap">
-                <div className="contianer-xl">
+                <div className="contianer-xxl">
                     <div className="row">
                         <div className="col-12">
         	                <div id="map" style={{ width: "100%", height: "800px"}}></div> 
