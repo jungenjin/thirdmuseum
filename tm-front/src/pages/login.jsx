@@ -29,8 +29,9 @@ function Login(){
         <div>
             <h1 className="loginh1">로그인</h1>
         </div>
-        <form>
+        <form className="loginform">
         <input
+              className="inputlogin"
               margin="normal"
               id="id"
               label="id"
@@ -39,6 +40,7 @@ function Login(){
               placeholder="아이디를 입력해주세요."/>
               <br></br>
         <input
+              className="inputlogin"
               margin="normal"
               id="password"
               label="password"
