@@ -36,6 +36,10 @@
 
       npm install axios@1.3.3
       
++ naver 로그인 설치
+
+      npm add react-login-by-naver@0.1.8
+  
 ---
 
 ## :leaves: back-end 설정 (springboot)
