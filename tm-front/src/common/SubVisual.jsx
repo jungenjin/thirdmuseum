@@ -10,7 +10,7 @@ function SubVisual(props) {
             {
                 `${props.imgName}` === ''
                  ? ''
-                 : <img src={src} className="ratio" /> 
+                 : <img src={src} className="ratio" alt={props.name} /> 
             }
         </div>
         </>
