@@ -30,7 +30,7 @@ function Location() {
     return(
         <section>
             <SubVisual name={'오시는길'} imgName='' />
-                <h1>찾아오시는 길</h1>
+                <h1 calss="location_title">찾아오시는 길</h1>
             <div className="location_wrap">
                 <div className="contianer-xxl">
                     <div className="row">
