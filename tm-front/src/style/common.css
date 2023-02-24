@@ -11,10 +11,12 @@
   width: 1440px;
  
 }
+
 /* header */
 .header{
   padding-top: 7px;
   height: 54px;
+ 
 }
 .nav-item{
   list-style:none;
