@@ -3,11 +3,11 @@ body{
   font-family: 'NotoSansKR', 'PlayfairDisplay', serif, sans-serif;
 }
 
-.atth1 {
-    text-align: center;
-    margin-top: 167px;
-    margin-bottom: 68px;
-    font-family: 'NotoSansKR';
-    font-weight: bold;
-    font-size: 80px;
+.attentionac{
+  margin-top: 68px;
+  width: 1440px;
+  align-items: center;
+}
+Accordion{
+  align-items: center;
 }
