@@ -4,7 +4,7 @@ import '../style/common.css';
 function Header() {
   return (
     <>
-    <div className='container-xxl p-2'>
+    <div className='container-xxl p-3'>
       <Navbar bg="white" expand="lg" >
         <Container className='navbar'>
         <Navbar.Brand href="/main">세번째미술관</Navbar.Brand>

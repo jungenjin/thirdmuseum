@@ -28,7 +28,7 @@
   font-weight: 700;
 }
 .dropdown-menu.show{
-  margin-left: 14px;
+  margin-left: 0.875rem;
 }
 
 /* footer */
@@ -41,12 +41,31 @@ footer{
   padding-top: 72px;
 }
 .Ftext{
+  font-size: 0.875rem;
+  font-weight: 500;
   float: left;
-  margin-right: 42px;
+  margin-right: 2.625rem;
 }
 .FSubtext {
   clear: both;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
+
+@media (min-width: 992px) {
+  .Ftext{
+    font-size: 1.125rem;
+    font-weight: 500;
+    float: left;
+    margin-right: 60px;
+  }
+  .FSubtext {
+    clear: both;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+
 
 /* by 김은주 - 서브페이지 화면명+이미지 2023-02-23 */
 .subvisual {padding:2.5rem 0 1.125rem}

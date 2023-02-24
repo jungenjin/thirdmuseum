@@ -4,10 +4,9 @@ import '../style/common.css';
 
 function Footer() {
   return (
-    <div className="container-xxl">
       <div className="Footer">
         <footer className="App-Footer">
-          <footer>
+          <footer className="container-xxl p-3">
               <div className="FtextBox">
                 <p className="Ftext">오시는 길</p>
                 <p className="Ftext">이용약관</p>
@@ -17,7 +16,6 @@ function Footer() {
           </footer>
         </footer>
       </div>
-    </div>
   );
 }
 
