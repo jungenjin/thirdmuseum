@@ -11,7 +11,7 @@ function now(){
     return(
         <section>
             <SubVisual name={'현재전시'} imgName={'now'} />
-            <h1>현재 전시</h1>
+            <h1 calss="now_title">현재 전시</h1>
             <div>
                 <img src={Now1} class="NowImg1" alt='이미지1'></img>
             </div>
