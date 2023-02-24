@@ -7,7 +7,7 @@
   max-width: 100%;
   z-index: -1;
   height: 864px;
-  background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:483px 373px, 513px 375px; background-position:right 0px, left 350px; background-repeat:no-repeat;
+  background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:483px 373px, 513px 375px; background-position:right 0px, left 23.2rem; background-repeat:no-repeat;
 }
 .h4{
   font-weight: 500 !important;
@@ -24,6 +24,7 @@
   font-weight: bold;
   display: flex;
   justify-content: center;
+  color: #000;
 }
 .mainText3{
   font-size: 9rem;
@@ -32,23 +33,24 @@
   font-weight: bold;
   display: flex;
   justify-content: center;
+  color: #000;
 }
 .mainBtn{
   width: 327px;
   height: 72px;
   text-align: center;
   background-color: #000;
-  margin-top: 7rem;
+  margin-top: 5.6rem;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   
 }
-.mainTextBtn{
+.display-6 {
   text-decoration: none !important;
   color: #fff !important;
-  font-family: 'NotoSansKR';
-  
+  font-weight: 500 !important;
+  font-family: 'Noto Sans KR';
 }
 .content{
   margin-top: 230px;
@@ -57,7 +59,8 @@
 .Ptext{
  font-family: 'Playfair Display';
  text-align: center;
- padding-bottom: 51px;
+ padding-bottom: 95px;
+ color: #000;
 }
 .col{
   display: flex;
@@ -115,32 +118,33 @@
   .main{
     max-width: 100%;
     height: 864px;
-    background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:690px 533px, 733px 536px; background-position:right 0px, left 233px; background-repeat:no-repeat;
+    background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:690px 533px, 733px 536px; background-position:right 0px, left 20.75rem; background-repeat:no-repeat;
   }
   .h4{
     font-weight: 500 !important;
-    /* margin-top: 38px !important;  */
-    margin-left: 30px !important;
+    margin-left: 79px !important;
     padding-top: 2.3rem;;
     font-family: 'Noto Sans KR' !important;
     display: block;
   }
   .mainText2{
-    font-size: 19rem;
+    font-size: 19.334rem;
     margin-left: 140px;
-    line-height: 250px;
+    line-height: 260px;
     font-family: 'Playfair Display';
     font-weight: bold;
     display: block;
+    color: #000;
   }
 
   .mainText3{
-    font-size: 19rem;
+    font-size: 17.801rem;
     margin-left: 526px;
     line-height: 250px;
     font-family: 'Playfair Display';
     font-weight: bold;
     display: block;
+    color: #000;
   }
   
   .mainBtn{
@@ -148,16 +152,17 @@
     height: 72px;
     text-align: center;
     background-color: #000;
-    margin-top: 115px;
+    margin-top: 8rem;
     margin-left: 742px;
     display: block;
     position: static;
     transform:none;
   }
-  .mainTextBtn{
+  .display-6 {
     text-decoration: none !important;
     color: #fff !important;
-    font-family: 'NotoSansKR';
+    font-weight: 500 !important;
+    font-family: 'Noto Sans KR';
   }
   .col {
     display: block;
