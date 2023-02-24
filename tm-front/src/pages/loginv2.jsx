@@ -11,7 +11,7 @@ function login(){
             <h1 className="loginh1">로그인</h1>
         </div>
         <div className="v2login" style={{background: 'url(/resource/common/login_v2.png)'}}></div>
-        <form>
+        <form className="loginform">
         <input
               margin="normal"
               id="id"
@@ -21,6 +21,7 @@ function login(){
               placeholder="아이디를 입력해주세요."/>
               <br></br>
         <input
+        inputlogin
               margin="normal"
               id="password"
               label="password"
