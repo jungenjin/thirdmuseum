@@ -59,4 +59,8 @@ footer{
 }
 
 /* by 김은주 - 서브페이지 화면명+이미지 2023-02-23 */
+.subvisual {padding-top:3rem}
 .subvisual h1 {font-weight:500}
+@media (min-width: 992px) {
+  .subvisual {padding-top:10.438rem}
+}
