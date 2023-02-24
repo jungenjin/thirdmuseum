@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import cn from "classnames";
 import '../style/location.css'
+import SubVisual from '../common/SubVisual';
 
 
 function Location() {
