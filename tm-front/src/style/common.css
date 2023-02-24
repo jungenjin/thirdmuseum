@@ -27,7 +27,9 @@
   font-size: 20px !important;
   font-weight: 700;
 }
-
+.dropdown-menu.show{
+  margin-left: 14px;
+}
 
 /* footer */
 footer{

@@ -11,7 +11,7 @@
 }
 .h4{
   font-weight: 500 !important;
-  /* margin-top: 38px !important;  */
+  padding-top: 2.3rem;;
   margin-left: 30px !important;
   font-family: 'Noto Sans KR' !important;
   display: flex;
@@ -121,6 +121,7 @@
     font-weight: 500 !important;
     /* margin-top: 38px !important;  */
     margin-left: 30px !important;
+    padding-top: 2.3rem;;
     font-family: 'Noto Sans KR' !important;
     display: block;
   }
