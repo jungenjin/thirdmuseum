@@ -77,27 +77,27 @@ class NoticeCreate extends Component {
         return (
             <>
                 <SubVisual name={'공지사항'} imgName={'notice'} />
-                <div className = "container">
-                    <div className = "row">
-                        <div className = "card col-md-6 offset-md-3 offset-md-3">
-                            <div className = "card-body">
-                                <form>
-                                    <div className = "form-group">
-                                        <label> 제목 </label>
-                                        <input type="text" placeholder="제목을 입력하세요." name="ntcTitle" className="form-control" 
-                                        value={this.state.ntcTitle} onChange={this.changentcTitleHandler}/>
-                                    </div>
-                                    <div className = "form-group">
-                                        <label> 내용  </label>
-                                        <textarea placeholder="내용을 입력하세요." name="ntcContent" className="form-control" 
-                                        value={this.state.ntcContent} onChange={this.changentcContentHandler}/>
-                                    </div>
-                                    <button className="btn btn-success" onClick={this.createBoard}>글 작성하기</button>
-                                    <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft:"10px"}}>취소</button>
-                                </form>
+                <div className="container-xxl">
+                    <form>
+                        <div className="row">
+                            <div className="mb-5">
+                                <label className="form-label">제목</label>
+                                <input type="text" name="ntcTitle" className="form-control  form-control-lg" 
+                                value={this.state.ntcTitle} onChange={this.changentcTitleHandler} placeholder="제목을 입력하세요." />
+                            </div>
+                            <div className="">
+                                <label className="form-label">내용</label>
+                                <textarea name="ntcContent" className="form-control  form-control-lg" 
+                                value={this.state.ntcContent} onChange={this.changentcContentHandler} rows="10" placeholder="내용을 입력하세요." />
                             </div>
                         </div>
-                    </div>
+                        <div className="row justify-content-end pt-3 mt-5">
+                            <div className='col-auto'>
+                                <button className="btn btn-secondary btn-lg" onClick={this.createBoard}>글 등록하기</button>
+                                <button className="btn btn-secondary btn-lg" onClick={this.cancel.bind(this)} style={{marginLeft:"10px"}}>취소</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
             </>

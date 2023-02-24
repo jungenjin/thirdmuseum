@@ -1,6 +1,6 @@
 /*네이버 로그인 없는버전*/
 import { useHistory } from "react-router-dom";
-import { useEffect, useRef } from 'react'
+import SubVisual from '../common/SubVisual';
 import NaverLogin from "react-login-by-naver";
 import axios from "axios";
 import '../style/login.css'
@@ -27,7 +27,7 @@ function Login(){
     return(
         <header>
         <div>
-            <h1 className="loginh1">로그인</h1>
+          <SubVisual name={'로그인'} imgName={''} />
         </div>
         <form className="loginform">
         <input

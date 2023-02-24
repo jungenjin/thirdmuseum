@@ -58,22 +58,27 @@ class NoticeRead extends Component {
         return (
             <>
             <SubVisual name={'공지사항'} imgName={'notice'} />
-                <div className = "card col-md-6 offset-md-3">
-                    <div className = "card-body">
-                            <div className = "row">
-                                <label> 제목 </label> {this.state.board.ntcTitle}
-                            </div>
+                <div className='container-xxl'>
+                    <div className = "card col-md-6 offset-md-3">
+                        <div className = "card-body">
+                                <div className = "row">
+                                    <label> 제목 </label> {this.state.board.ntcTitle}
+                                </div>
 
-                            <div className = "row">
-                                <label> 내용 </label>
-                                <textarea value={this.state.board.ntcContent} readOnly/> 
-                            </div >
-                            <button className="btn btn-info" onClick={this.goToUpdate} style={{marginLeft:"10px"}}>글 수정</button>
-                            <button className="btn btn-danger" onClick={() => this.deleteView()} style={{marginLeft:"10px"}}>글 삭제</button>
-                            <button className="btn btn-primary" onClick={this.goToList.bind(this)} style={{marginLeft:"10px"}}>목록으로</button>
+                                <div className = "row">
+                                    <label> 내용 </label>
+                                    <textarea value={this.state.board.ntcContent} readOnly/> 
+                                </div >
+                                <div className="row justify-content-end pt-3 mt-5">
+                                    <div className='col-auto'>
+                                        <button className="btn btn-secondary btn-lg" onClick={this.goToUpdate} style={{marginLeft:"10px"}}>글 수정하기</button>
+                                        <button className="btn btn-secondary btn-lg" onClick={() => this.deleteView()} style={{marginLeft:"10px"}}>글 삭제하기</button>
+                                        <button className="btn btn-secondary btn-lg" onClick={this.goToList.bind(this)} style={{marginLeft:"10px"}}>목록으로</button>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
-
             </>
         );
     }

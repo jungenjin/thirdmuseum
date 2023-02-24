@@ -1,5 +1,6 @@
 /*네이버 로그인 없는버전*/
 import React from "react";
+import SubVisual from '../common/SubVisual';
 import { useHistory } from "react-router-dom";
 import '../style/login.css'
 
@@ -8,7 +9,7 @@ function login(){
         <>
         <header/>
         <div>
-            <h1 className="loginh1">로그인</h1>
+            <SubVisual name={'로그인'} imgName={''} />
         </div>
         <div className="v2login" style={{background: 'url(/resource/common/login_v2.png)'}}></div>
         <form className="loginform">

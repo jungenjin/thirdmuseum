@@ -4,15 +4,6 @@ body{
   font-family: 'NotoSansKR', 'PlayfairDisplay', serif, sans-serif;
 }
 
-.loginh1 {
-    text-align: center;
-    margin-top: 167px;
-    margin-bottom: 68px;
-    font-family: 'NotoSansKR';
-    font-weight: bold;
-    font-size: 80px;
-}
-
 .loginform{
     text-align: center;
 }
