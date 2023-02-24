@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-body{
-  font-family: 'Noto Sans KR', 'Playfair Display', serif, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+*{
+  font-family: 'Noto Sans KR', 'Playfair Display';
 }
-
 
 .main{
   max-width: 100%;
@@ -11,7 +9,6 @@ body{
   height: 864px;
   background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:483px 373px, 513px 375px; background-position:right 0px, left 350px; background-repeat:no-repeat;
 }
-
 .h4{
   font-weight: 500 !important;
   margin-top: 38px !important; 
@@ -28,7 +25,6 @@ body{
   display: flex;
   justify-content: center;
 }
-
 .mainText3{
   font-size: 9rem;
   line-height: 150px;
@@ -37,7 +33,6 @@ body{
   display: flex;
   justify-content: center;
 }
-
 .mainBtn{
   width: 327px;
   height: 72px;
@@ -55,11 +50,9 @@ body{
   font-family: 'NotoSansKR';
   
 }
-
 .content{
   margin-top: 230px;
   text-align: center;
-  
 }
 .Ptext{
  font-family: 'Playfair Display';
@@ -70,7 +63,6 @@ body{
   display: flex;
   justify-content: center;
 }
-
 .Pimg1{
   width: 578px;
   height: 722px;
