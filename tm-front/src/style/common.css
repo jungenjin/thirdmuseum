@@ -7,9 +7,13 @@
 *{
   font-family: 'Noto Sans KR', 'Playfair Display';
 }
-
+.container{
+  width: 1440px;
+ 
+}
 /* header */
-.navbar{
+.header{
+  padding-top: 38px;
   height: 104px;
 }
 .nav-item{
@@ -25,16 +29,6 @@
 .navbar-brand{
   font-size: 20px !important;
   font-weight: 700;
-}
-#navbarScrollingDropdown{
-  z-index: 9999;
-  
-}
-#basic-navbar-nav{
-  background-color: #fff;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
 }
 
 

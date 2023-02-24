@@ -128,7 +128,6 @@ body{
 
   .main{
     max-width: 100%;
-    z-index: -1;
     height: 864px;
     background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:690px 533px, 733px 536px; background-position:right 0px, left 233px; background-repeat:no-repeat;
   }

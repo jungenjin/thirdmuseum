@@ -9,6 +9,7 @@ import '../style/common.css';
 
 function Header() {
   return (
+    <div className='header'>
     <Navbar bg="white" expand="lg" className='container-xxl'>
       <Container className='navbar'>
       <Navbar.Brand href="/main">세번째미술관</Navbar.Brand>
@@ -36,6 +37,7 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 }
 
