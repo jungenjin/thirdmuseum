@@ -54,9 +54,9 @@ class NoticeList extends Component {
                         </tbody>
                     </table>
                 </div>
-                <div className="row justify-content-end">
+                <div className="row justify-content-end pt-3 mt-5">
                     <div className='col-auto'>
-                    <button className="btn btn-secondary btn-lg" onClick={this.createBoard}>새 글 쓰기</button>
+                        <button className="btn btn-secondary btn-lg" onClick={this.createBoard}>새 글 쓰기</button>
                     </div>
                 </div>
             </div>
