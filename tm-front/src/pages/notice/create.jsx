@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import BoardService from './service';
+import SubVisual from '../../common/SubVisual';
+import '../../style/common.css';
 
 class NoticeCreate extends Component {
     constructor(props) {
@@ -73,7 +75,8 @@ class NoticeCreate extends Component {
 
     render() {
         return (
-            <div>
+            <>
+                <SubVisual name={'공지사항'} imgName={'notice'} />
                 <div className = "container">
                     <div className = "row">
                         <div className = "card col-md-6 offset-md-3 offset-md-3">
@@ -97,7 +100,7 @@ class NoticeCreate extends Component {
                     </div>
                 </div>
 
-            </div>
+            </>
         );
     }
 }
