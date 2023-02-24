@@ -13,13 +13,13 @@ body{
     font-size: 80px;
 }
 
-form{
+.loginform{
     text-align: center;
 }
 #id{
     margin-bottom: 60px;
 }
-input{
+.inputlogin{
     width: 35%;
     padding: 20px;
 }

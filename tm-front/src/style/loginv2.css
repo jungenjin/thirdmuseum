@@ -18,13 +18,13 @@ body{
     background-image:url(../resource/common/login_naverlogin.png);
     margin-bottom: 68px;
 }
-form{
+.loginform{
     text-align: center;
 }
 #id{
     margin-bottom: 60px;
 }
-input{
+.inputlogin{
     width: 35%;
     padding: 20px;
 }
