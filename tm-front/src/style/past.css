@@ -1,0 +1,5 @@
+.pastArt {cursor: pointer; align-content: center;}
+.pastImg {width: auto; height: 480px; padding: 2.5rem;}
+.pastInfo {cursor: pointer; padding: 0 2.5em;}
+.pastTitle {line-height: 1.4em; font-size: 20px; font-weight: bold;}
+.pastText {font-size: 16px; margin-top: 7px;}
