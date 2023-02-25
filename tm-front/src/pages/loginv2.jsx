@@ -9,9 +9,9 @@ function login(){
         <>
         <header/>
         <div>
-            <SubVisual name={'로그인'} imgName={''} />
+            <SubVisual name={'로그인'} imgName={'loginv2'} />
         </div>
-        <div className="v2login" style={{background: 'url(/resource/common/login_v2.png)'}}></div>
+        
         <form className="loginform">
         <input
               margin="normal"
