@@ -1,5 +1,6 @@
 .programrow{
-    width: 1500px;
+    max-width: 1500px;
+    width: 100%;
 }
 .programtxt{
     padding-top: 80px;
@@ -22,5 +23,5 @@
 .psub1{
     font-size: 20px;
     font-weight: 500;
-}
+} 
 
