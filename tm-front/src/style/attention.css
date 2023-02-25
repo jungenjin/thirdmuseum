@@ -4,10 +4,21 @@ body{
 }
 
 .attentionac{
-  margin-top: 68px;
-  width: 1440px;
-  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  
 }
-Accordion{
-  align-items: center;
+
+.mq{
+  margin-left: 52px;
+}
+
+.attentionbody{
+  margin-left: 92px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.accordion-button{
+  display: hidden;
 }
