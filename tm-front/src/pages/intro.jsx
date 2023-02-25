@@ -47,7 +47,7 @@ function intro(){
               </div>
             </Col>
             <Col xs={12} md={6} lg={6}>
-              <div className="visionImg">
+              <div className="historyImg">
                 <img src="../resource/intro/intro_2.png" alt="intro2"/>
               </div>
             </Col>
