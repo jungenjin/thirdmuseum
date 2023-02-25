@@ -1,4 +1,5 @@
 /*네이버 로그인 없는버전*/
+import React from "react";
 import { useHistory } from "react-router-dom";
 import SubVisual from '../common/SubVisual';
 import NaverLogin from "react-login-by-naver";
@@ -21,7 +22,7 @@ function Login(){
   
       axios
         .post("http://localhost:9008/naver.do", form)
-        .then(history.push("/SuccessInfo"));
+        .then(history.push("/main"));
     };
 
     return(
@@ -53,8 +54,8 @@ function Login(){
 
         
         <NaverLogin
-      clientId="******"   // 옆에 네이버 클라이언트 ID 수정 바랍니다
-      callbackUrl="http://192.168.0.81:3000"
+      clientId="PckNTs2JD903WZgtj1x0"   // 옆에 네이버 클라이언트 ID 수정 바랍니다
+      callbackUrl="http://localhost:3000"
       render={(props) => (
         <div onClick={props.onClick}>
           <button className="btnnaverlogin" type="submit"><b className="Nv">N </b> 네이버 로그인</button>

@@ -12,9 +12,9 @@ function programe(){
         </div>
         <Container>
           <Row className='programrow'>
-            <Col sm><img src="../resource/display/program_1.png" class="programimg" alt='프로그램1'></img></Col>
+            <Col sm><img src="../resource/display/program_1.png" class="pri" alt='프로그램1'></img></Col>
             <Col sm>
-              <div class="programtxt">
+              <div class="tri">
                 <p className='psub'>《강석호: 3분의 행복》전시연계 대담</p>
                 세번째 미술관은《강석호: 3분의 행복》 전시와 연계하여 진행하는 대담에 여러분을 초대합니다. <br /> 
                 본 연계 프로그램에서는 동료 예술가의 관점에서 강석호 작가의 회화관과 <br /> 미감에 대한 통찰을 공유하고 작가의 예술 세계에 대해 심층적으로 탐구합니다. <br /> 별도의 사전 예약 없이 현장 등록을 통해 참여할 수 있습니다.<br /> 
