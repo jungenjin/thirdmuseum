@@ -53,7 +53,7 @@ function attention(){
           <Accordion.Item eventKey="5">
             <Accordion.Header>Q<span className='mq'></span>무료 관람 가능한 전시는 무엇인가요?</Accordion.Header>
             <Accordion.Body className='attentionbody'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              현재 진행중인 무료 전시는 없습니다.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="6">
@@ -72,7 +72,12 @@ function attention(){
           <Accordion.Item eventKey="8">
             <Accordion.Header>Q<span className='mq'></span>현재 진행중인 전시는 어떤 전시인가요?</Accordion.Header>
             <Accordion.Body className='attentionbody'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              「올림피아 자그놀리 : LIFE IS COLOR」그림전시가 진행중입니다.
+                <br></br>
+                <br></br>
+              “Life is color”는 올림피아 자그놀리 작가의 한국 첫번째 전시이다. <br></br>
+              이탈리아에서 태어나고 자란 그녀는, 어린시절부터 카라밧지오와 앤디니 등 대가들의 예술 작품들을 가까이 접하며 지냈다. 그녀는 부드러운 형태와 강렬한 색상, 인물과 <br></br>
+              공간들이 상호작용을 일으키며 만들어내는 시각적 언어를 통해 관객과 소통한다. 자그놀리의 캔버스안에서 보이는 행복한 캐릭터들은 독특한 복장과 머리모양을 하고는 <br></br>각각의 자유로운 방식으로 보는 이들에게 긍정의 메세지를 전하는 전시입니다.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="9">
