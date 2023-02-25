@@ -1,0 +1,8 @@
+.welcome {font-size: 36px; font-weight: bold; margin-top: 68px; padding: 0 1.5em;}
+.welcomeTxt {font-size: 16px; margin-top: 68px; padding: 0 1.5em;}
+.introSub {font-size: 44px; font-weight: bold; margin-top: 180px; margin-bottom: 68px; text-align: center;}
+
+.historyImg {align-items: flex;}
+.visionImg {}
+.historyTxt {color: #fff; font-size: 42px; font-weight: bold;} 
+.visionTxt {color: #fff; font-size: 42px; font-weight: bold;}
