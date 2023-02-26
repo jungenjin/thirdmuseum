@@ -33,50 +33,44 @@ function intro(){
               </Col>
           </Row>
           <Row>
-            <Col xs={6} md={6} lg={6}>
-                <div className="historyTxt">2012.02.09 개관</div>
+            <Col xs={12} md={6} lg={6}>
             </Col>
-            <Col xs={6} md={6} lg={6}>
-                <div className="visionTxt">2018.05.08 c홀 개관</div>
+            <Col xs={12} md={6} lg={6}>
             </Col>
           </Row>
           <Row>
             <Col xs={12} md={6} lg={6}>
-              <div className="historyImg">
-                <img src="../resource/intro/intro_1.png" alt="intro1"/>
-              </div>
+            <div className="historyTxt">2012.02.09<br/>개관</div>
             </Col>
             <Col xs={12} md={6} lg={6}>
-              <div className="historyImg">
-                <img src="../resource/intro/intro_2.png" alt="intro2"/>
-              </div>
+            <div className="historyTxt">2018.05.08<br/>c홀 신설</div>
             </Col>
           </Row>
           <Row>
-            <Col xs={12} md={12} lg={12}>
+            <Col xs={12} md={6} lg={6}>
+                <img src="../resource/intro/intro_1.png" alt="intro1" className="historyImg"/>
+            </Col>
+            <Col xs={12} md={6} lg={6}>
+                <img src="../resource/intro/intro_2.png" alt="intro2" className="historyImg"/>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} md={12} lg={12} className="introSub">
               <div className="introSub">vision</div>
             </Col>
           </Row>
           <Row>
             <Col xs={12} md={6} lg={3}>
-              <div className="visionImg">
-                <img src="../resource/intro/intro_3.png" alt="intro3"/>
-              </div>
+                <img src="../resource/intro/intro_3.png" alt="intro3" className="visionImg"/>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <div className="visionImg">
-                <img src="../resource/intro/intro_4.png" alt="intro4"/>
-              </div>
+                <img src="../resource/intro/intro_4.png" alt="intro4" className="visionImg"/>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <div className="visionImg">
-                <img src="../resource/intro/intro_5.png" alt="intro5"/>
-              </div>
+                <img src="../resource/intro/intro_5.png" alt="intro5" className="visionImg"/>
             </Col>
             <Col xs={12} md={6} lg={3}>
-              <div className="visionImg">
-                <img src="../resource/intro/intro_6.png" alt="intro6"/>
-              </div>
+                <img src="../resource/intro/intro_6.png" alt="intro6" className="visionImg"/>
             </Col>
           </Row>
         </div>
