@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import BoardService from './service';
 import SubVisual from '../../common/SubVisual';
-import '../../style/common.css';
 
 class NoticeCreate extends Component {
     constructor(props) {
@@ -82,19 +81,19 @@ class NoticeCreate extends Component {
                         <div className="row">
                             <div className="mb-5">
                                 <label className="form-label">제목</label>
-                                <input type="text" name="ntcTitle" className="form-control  form-control-lg" 
+                                <input type="text" name="ntcTitle" className="form-control form-control-lg" 
                                 value={this.state.ntcTitle} onChange={this.changentcTitleHandler} placeholder="제목을 입력하세요." />
                             </div>
                             <div className="">
                                 <label className="form-label">내용</label>
-                                <textarea name="ntcContent" className="form-control  form-control-lg" 
+                                <textarea name="ntcContent" className="form-control form-control-lg" 
                                 value={this.state.ntcContent} onChange={this.changentcContentHandler} rows="10" placeholder="내용을 입력하세요." />
                             </div>
                         </div>
                         <div className="row justify-content-end pt-3 mt-5">
                             <div className='col-auto'>
-                                <button className="btn btn-secondary btn-lg" onClick={this.createBoard}>글 등록하기</button>
-                                <button className="btn btn-secondary btn-lg" onClick={this.cancel.bind(this)} style={{marginLeft:"10px"}}>취소</button>
+                                <button className="btn btn-dark btn-lg" onClick={this.createBoard}>글 등록하기</button>
+                                <button className="btn btn-dark btn-lg" onClick={this.cancel.bind(this)} style={{marginLeft:"20px"}}>취소</button>
                             </div>
                         </div>
                     </form>

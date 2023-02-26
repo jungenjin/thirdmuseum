@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import BoardService from './service';
 import SubVisual from '../../common/SubVisual';
-import '../../style/common.css';
 
 class NoticeRead extends Component {
     constructor(props) {
@@ -71,9 +70,9 @@ class NoticeRead extends Component {
                                 </div >
                                 <div className="row justify-content-end pt-3 mt-5">
                                     <div className='col-auto'>
-                                        <button className="btn btn-secondary btn-lg" onClick={this.goToUpdate} style={{marginLeft:"10px"}}>글 수정하기</button>
-                                        <button className="btn btn-secondary btn-lg" onClick={() => this.deleteView()} style={{marginLeft:"10px"}}>글 삭제하기</button>
-                                        <button className="btn btn-secondary btn-lg" onClick={this.goToList.bind(this)} style={{marginLeft:"10px"}}>목록으로</button>
+                                        <button className="btn btn-dark btn-lg" onClick={this.goToUpdate}>글 수정하기</button>
+                                        <button className="btn btn-dark btn-lg" onClick={() => this.deleteView()} style={{marginLeft:"20px"}}>글 삭제하기</button>
+                                        <button className="btn btn-dark btn-lg" onClick={this.goToList.bind(this)} style={{marginLeft:"20px"}}>목록으로</button>
                                     </div>
                                 </div>
                         </div>

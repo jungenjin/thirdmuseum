@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SubVisual from '../../common/SubVisual';
-import '../../style/common.css';
 
 function Reserve(){
     return(

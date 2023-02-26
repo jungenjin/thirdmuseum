@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style/common.css';
 
 function SubVisual(props) {
     const src = `/resource/common/${props.imgName}_visual.png`;

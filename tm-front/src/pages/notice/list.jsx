@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import BoardService from './service';
 import SubVisual from '../../common/SubVisual';
-import '../../style/common.css';
 
 class NoticeList extends Component {
     constructor(props) {

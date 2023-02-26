@@ -2,7 +2,6 @@
 import axios from "axios";
 import React, { Component } from "react";
 import SubVisual from '../../common/SubVisual';
-import '../../style/common.css';
 
 class InputForm extends Component {
   constructor(props) {
@@ -134,7 +133,7 @@ class InputForm extends Component {
         <div className="row justify-content-end pt-3 mt-5">
           <div className='col-auto'>
             {this.createCrudBtn()}
-            <button className="btn btn-dark btn-lg" onClick={this.cancel.bind(this)} style={{marginLeft:"10px"}}>취소</button>
+            <button className="btn btn-dark btn-lg" onClick={this.cancel.bind(this)} style={{marginLeft:"20px"}}>취소</button>
           </div>
         </div>
       </div>
