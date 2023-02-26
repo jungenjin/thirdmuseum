@@ -15,6 +15,8 @@ import NoticeList from './pages/notice/list';
 import NoticeCreate from './pages/notice/create';
 import NoticeRead from './pages/notice/read';
 import login from './pages/login';
+import './style/common.css';
+import './style/custom.css'; //bootstrap scss custom
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
