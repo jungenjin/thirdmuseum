@@ -21,7 +21,7 @@ function Header() {
                 <NavDropdown.Item href="/programe">프로그램</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="예약" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/reserve/Insert">관람예약</NavDropdown.Item>
+                <NavDropdown.Item href="/reserve">관람예약</NavDropdown.Item>
                 <NavDropdown.Item href="/attention">
                   관람 유의사항
                 </NavDropdown.Item>

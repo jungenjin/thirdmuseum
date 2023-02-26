@@ -10,7 +10,6 @@ import past from './pages/past';
 import programe from './pages/programe';
 import Reserve from './pages/reserve/Reserve';
 import ReserveOk from './pages/reserve/ReserveOk';
-import InputForm from "./pages/reserve/InputForm";
 import attention from './pages/attention';
 import NoticeList from './pages/notice/list';
 import NoticeCreate from './pages/notice/create';
@@ -35,7 +34,7 @@ function App() {
         <Route exact path="/notice" component={NoticeList} />
         <Route path = "/create-board/:ntcNo" component = {NoticeCreate} />
         <Route path = "/read-board/:ntcNo" component = {NoticeRead} />
-        <Route exact path="/reserve/Insert" component={Reserve} />
+        <Route exact path="/reserve" component={Reserve} />
         <Route path="/reserveOk" component={ReserveOk} />
         <Route exact path="/login" component={login} />
       </Switch>
