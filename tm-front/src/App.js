@@ -8,7 +8,9 @@ import location from './pages/location';
 import now from './pages/now';
 import past from './pages/past';
 import programe from './pages/programe';
-import reserve from './pages/reserve';
+import Reserve from './pages/reserve/Reserve';
+import ReserveOk from './pages/reserve/ReserveOk';
+import InputForm from "./pages/reserve/InputForm";
 import attention from './pages/attention';
 import NoticeList from './pages/notice/list';
 import NoticeCreate from './pages/notice/create';
@@ -29,12 +31,12 @@ function App() {
         <Route exact path="/now" component={now} />
         <Route exact path="/past" component={past} />
         <Route exact path="/programe" component={programe} />
-        <Route exact path="/reserve" component={reserve} />
         <Route exact path="/attention" component={attention} />
-        {/* 공지사항 게시판 추가 */}
         <Route exact path="/notice" component={NoticeList} />
         <Route path = "/create-board/:ntcNo" component = {NoticeCreate} />
         <Route path = "/read-board/:ntcNo" component = {NoticeRead} />
+        <Route exact path="/reserve/Insert" component={Reserve} />
+        <Route path="/reserveOk" component={ReserveOk} />
         <Route exact path="/login" component={login} />
       </Switch>
     <Footer/>
