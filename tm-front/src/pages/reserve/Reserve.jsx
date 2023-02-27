@@ -27,7 +27,7 @@ class InputForm extends Component {
       const crudName =
       crud === "Update" ? "수정" : crud === "Insert" ? "관람예약 신청하기" : "삭제";
       return (
-        <button className="btn btn-dark btn-lg" onClick={() => this.crud()}>{crudName}</button>
+        <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={() => this.crud()}>{crudName}</button>
       );
     }
   }
@@ -127,13 +127,21 @@ class InputForm extends Component {
           </div>
           <div className="">
             <label className="form-label">예약시 주의사항</label>
-            <div>aa</div>
+            <div className="bg-secondary bg-opacity-10 lh-lg p-3">
+              <ul>
+                <li>관람 희망일 14일전 18:00부터 예약가능</li>
+                <li>회차 구분 없음, 사전예약 필수</li>
+                <li>코로나19로 인해 유동적으로 운영 예정</li>
+                <li>무료대상자: 만24세 이하&#40;영유아포함&#41;,65세 이상, 대학생, 국가유공자 및 독립유공자&#40;배우자 포함&#41;, 장애인,문화누리카드 소지자, 기증자,유료회원, 예술인패스, 학예사 자격증 소지자</li>
+              </ul>
+              ※ 무료 및 할인 대상자는 예약 완료 후, 현장&#40;안내데스크&#41;에서 신분증 및 해당카드소지 확인후 입장 가능
+            </div>
           </div>
         </div>
-        <div className="row justify-content-end pt-3 mt-5">
+        <div className="row justify-content-end pt-4">
           <div className='col-auto'>
             {this.createCrudBtn()}
-            <button className="btn btn-dark btn-lg" onClick={this.cancel.bind(this)} style={{marginLeft:"20px"}}>취소</button>
+            <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.cancel.bind(this)}>취소</button>
           </div>
         </div>
       </div>
