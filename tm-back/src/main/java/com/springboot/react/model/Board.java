@@ -3,7 +3,6 @@ package com.springboot.react.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -26,7 +25,7 @@ public class Board {
 	@Column(name = "NTC_TITLE")
 	private String ntcTitle;
 	
-	@Column(name = "NTC_CONTENT")
+	@Column(name = "NTC_CONTENT", length=4000)
 	private String ntcContent;
 	
 //	@Column(name = "NTC_REG_ID")
