@@ -2,6 +2,17 @@ $body-color:                #000;
 $gray-400:                  #535459;//input border color
 $dark:                      $gray-400;
 
+a:hover {cursor: pointer;}
+
+// Links
+//
+// Style anchor elements.
+$link-decoration:           none;
+
+// scss-docs-start table-variables
+$table-border-color:        #000;
+// scss-docs-end table-variables 
+
 // scss-docs-start border-radius-variables
 $border-radius-lg:          0;
 // scss-docs-end border-radius-variables

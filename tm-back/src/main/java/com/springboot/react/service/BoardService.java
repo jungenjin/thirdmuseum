@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,9 @@ public class BoardService {
 	//게시물 목록보기 추가
 	//Repository를 호출해서 글목록 데이터를 리턴하는 메소드
 	public List<Board> getAllBoard(){
-		return boardRepository.findAll();
+		//기존 findAll()에서 번호기준 정렬 추가
+		//return boardRepository.findAll();
+		return boardRepository.findAll(Sort.by(Sort.Direction.DESC, "ntcNo"));
 	}
 
 	//글작성
