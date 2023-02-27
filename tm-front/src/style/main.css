@@ -66,7 +66,7 @@
   padding-bottom: 1.875rem;
 }
 .Pimg1{
-  padding-bottom: 1.81em;
+  padding-bottom: 1.34em;
 }
 @media(min-width: 992px){
   .main{
@@ -112,5 +112,10 @@
     position: static;
     transform:none;
   }
-  
+  .Pimg{
+    padding-bottom: 1.875rem;
+  }
+  .Pimg1{
+    padding-bottom: 1.81em;
+  }
 }
