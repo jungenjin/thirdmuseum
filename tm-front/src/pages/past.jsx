@@ -29,24 +29,24 @@ function past(){
                     </div>
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
-                    <img src="/resource/display/past_4.png" alt="past4" className="ratio"/>
+                    <img src="../resource/display/past_4.png" alt="past4" className='ratio'/>
+                    <div className='py-4'>
+                        <p className="fs-5 fw-bold">MMCA 청주프로젝트 2022 «도시공명»</p>
+                        <p className="fs-6 my-2">2022-08-24 ~ 2022-11-27</p>
+                    </div>
+                </Col>
+                <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
+                    <img src="/resource/display/past_5.png" alt="past5" className="ratio"/>
                     <div className="py-4">
                         <p className="fs-5 fw-bold text-wrap">MMCA 과천프로젝트 2021: 예술버스쉼터_쓸모없는 건축과 유용한 조각에 대하여</p>
                         <p>2021-12-15 ~ 2022-11-20</p>
                     </div>
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
-                    <img src="/resource/display/past_5.png" alt="past5" className="ratio"/>
+                    <img src="/resource/display/past_6.png" alt="past6" className="ratio"/>
                     <div className="py-4">
                         <p className="fs-5 fw-bold text-wrap">대지의 시간</p>
                         <p>2021-11-25 ~ 2022-03-27</p>
-                    </div>
-                </Col>
-                <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
-                    <img src="/resource/display/past_6.png" alt="past6" className="ratio"/>
-                    <div className="py-4">
-                        <p className="fs-5 fw-bold text-wrap">DMZ 극장</p>
-                        <p>2021-08-20 ~ 2021-10-03</p>
                     </div>
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
