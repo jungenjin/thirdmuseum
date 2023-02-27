@@ -1,4 +1,6 @@
 import '../style/main.css';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Main() {
   return (
@@ -13,44 +15,33 @@ function Main() {
               <button className="mainBtn" ><a className="mainTextBtn display-6" href='/now'>전시보러가기</a></button>
           </div>
         </section>
-        <section className="content">
+        <section>
             <div className="container-xxl">
                 <h2 className="display-1 Ptext">Preview</h2>
-                <div className="container-sm">
-                  <div class="row-cols-8">
-                    <div class="col">
-                      <div className="Pimg1"><img src={process.env.PUBLIC_URL + '/resource/main/Preview1.png'}  className="Pimg"/></div>
-                    </div>
-                    <div class="col">
-                      <div className=" Pimg2"><img src={process.env.PUBLIC_URL + '/resource/main/Preview2.png'}  className="Pimg"/></div>
-                    </div>
-                    <div class="col">
-                      <div className=" Pimg3"><img src={process.env.PUBLIC_URL + '/resource/main/Preview3.png'}  className="Pimg"/></div>
-                    </div>
-                    <div class="col">
-                      <div className=" Pimg4"><img src={process.env.PUBLIC_URL + '/resource/main/Preview4.png'}  className="Pimg"/></div>
-                    </div>
-                    <div class="col">
-                      <div className=" Pimg5"><img src={process.env.PUBLIC_URL + '/resource/main/Preview5.png'}  className="Pimg"/></div>
-                    </div>
-                    <div class="col">
-                      <div className=" Pimg6"><img src={process.env.PUBLIC_URL + '/resource/main/Preview6.png'}  className="Pimg"/></div>
-                    </div>
-                    <div class="col">
-                      <div className=" Pimg7"><img src={process.env.PUBLIC_URL + '/resource/main/Preview7.png'}  className="Pimg"/></div>
-                    </div>
-                    <div class="col">
-                      <div className=" Pimg8"><img src={process.env.PUBLIC_URL + '/resource/main/Preview8.png'}  className="Pimg"/></div>
-                    </div>
-                    <div class="col">
-                      <div className=" Pimg9"><img src={process.env.PUBLIC_URL + '/resource/main/Preview9.png'}  className="Pimg"/></div>
-                    </div>
-                  </div>
+                <Row>
+                  <Col lg={1}></Col>
+                    <Col xs={12} lg={5} className="me-4"> 
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview1.png'} className="img-fluid mb-5"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview4.png'} className="img-fluid mb-5"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview6.png'} className="img-fluid mb-5"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview8.png'} className="img-fluid mb-5"/>
+                    </Col>
+                    <Col xs={12} lg={5}>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview2.png'} className="img-fluid mb-5"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview3.png'} className="img-fluid mb-5"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview5.png'} className="img-fluid mb-5"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview7.png'} className="img-fluid mb-5"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview9.png'} className="img-fluid mb-5"/>
+                    </Col>
+                    <Col lg={1}></Col>
+          
+                    
+                    
+                </Row>
                 </div>
-            </div>
-        </section>
-      </section>
-    </div>
+            </section>
+          </section>
+      </div>
   );
 }
 
