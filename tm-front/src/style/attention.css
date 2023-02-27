@@ -1,37 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-body{
-  font-family: 'NotoSansKR', 'PlayfairDisplay', serif, sans-serif;
-}
-
 .attentionac{
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 60px;
-  
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
-.mq{
-  margin-left: 52px;
-}
-
-.attentionbody{
-  margin-left: 92px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.accordion-button{
-  display: hidden;
-}
-
-/* @media(max-width: 500px){
-  .mq{
-    margin-left: 10px;
-  }
-
-  .attentionbody{
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-} */
