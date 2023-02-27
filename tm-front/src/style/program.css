@@ -1,46 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
 
-
-.programrow{
-    max-width: 1500px;
-    width: 100%;
+.proh{
+    font-weight: 700;
 }
-
-.tri{
-    max-width: 574px;
-    width: 100%;
-    font-size: 16px;
-   
-}
-
-.programtxt{
-    padding-top: 80px;
-    max-width: 574px;
-    width: 100%;
-    font-size: 16px;
-    
-}
-
-.pri{
-    max-width: 821px;
-    width: 100%;
-    height: 340px;
-}
-.programimg{
-    padding-top: 80px;
-    max-width: 821px;
-    width: 100%;
-    height: 340px;
-    height: 100%;
-}
-
-.psub{
-  font-size: 32px;  
-  font-weight: 700;
-}
-
-.psub1{
-    font-size: 20px;
-    font-weight: 500;
-} 
-
