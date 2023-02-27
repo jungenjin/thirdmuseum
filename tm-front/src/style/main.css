@@ -52,10 +52,7 @@
   font-weight: 500 !important;
   font-family: 'Noto Sans KR';
 }
-.content{
-  margin-top: 161px;
-  text-align: center;
-}
+
 .Ptext{
  font-family: 'Playfair Display';
  text-align: center;
@@ -66,7 +63,7 @@
   padding-bottom: 1.875rem;
 }
 .Pimg1{
-  padding-bottom: 1.34em;
+  padding-bottom: 1.15em;
 }
 @media(min-width: 992px){
   .main{
@@ -111,6 +108,9 @@
     display: block;
     position: static;
     transform:none;
+  }
+  .content{
+    margin-top: 10.125rem;
   }
   .Pimg{
     padding-bottom: 1.875rem;

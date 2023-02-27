@@ -15,7 +15,7 @@ function Main() {
               <button className="mainBtn" ><a className="mainTextBtn display-6" href='/now'>전시보러가기</a></button>
           </div>
         </section>
-        <section className='pt-5'>
+        <section className='pt-5 content'>
             <div className="container-xxl">
                 <h2 className="display-1 Ptext">Preview</h2>
                 <Row>
