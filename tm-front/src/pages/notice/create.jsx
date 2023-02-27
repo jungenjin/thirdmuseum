@@ -90,10 +90,10 @@ class NoticeCreate extends Component {
                                 value={this.state.ntcContent} onChange={this.changentcContentHandler} rows="10" placeholder="내용을 입력하세요." />
                             </div>
                         </div>
-                        <div className="row justify-content-end pt-3 mt-5">
+                        <div className="row justify-content-end pt-4">
                             <div className='col-auto'>
-                                <button className="btn btn-dark btn-lg" onClick={this.createBoard}>글 등록하기</button>
-                                <button className="btn btn-dark btn-lg" onClick={this.cancel.bind(this)} style={{marginLeft:"20px"}}>취소</button>
+                                <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.createBoard}>글 등록하기</button>
+                                <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.cancel.bind(this)}>취소</button>
                             </div>
                         </div>
                     </form>

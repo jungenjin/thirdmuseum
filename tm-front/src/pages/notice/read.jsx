@@ -54,30 +54,32 @@ class NoticeRead extends Component {
     }
 
     render() {
+        const content = this.state.ntcContent;
+    //     const content1 = content.split('\n');
         return (
             <>
             <SubVisual name={'공지사항'} imgName={'notice'} />
-                <div className='container-xxl'>
-                    <div className = "card col-md-6 offset-md-3">
-                        <div className = "card-body">
-                                <div className = "row">
-                                    <label> 제목 </label> {this.state.board.ntcTitle}
-                                </div>
-
-                                <div className = "row">
-                                    <label> 내용 </label>
-                                    <textarea value={this.state.board.ntcContent} readOnly/> 
-                                </div >
-                                <div className="row justify-content-end pt-3 mt-5">
-                                    <div className='col-auto'>
-                                        <button className="btn btn-dark btn-lg" onClick={this.goToUpdate}>글 수정하기</button>
-                                        <button className="btn btn-dark btn-lg" onClick={() => this.deleteView()} style={{marginLeft:"20px"}}>글 삭제하기</button>
-                                        <button className="btn btn-dark btn-lg" onClick={this.goToList.bind(this)} style={{marginLeft:"20px"}}>목록으로</button>
-                                    </div>
-                                </div>
-                        </div>
+            <div className='container-xxl'>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th className='h5 pb-4'>{this.state.board.ntcTitle}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td className='py-5' style={{whiteSpace:'pre-line'}}>{this.state.board.ntcContent}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div className="row justify-content-end pt-4">
+                    <div className='col-auto'>
+                        <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.goToUpdate}>글 수정하기</button>
+                        <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={() => this.deleteView()}>글 삭제하기</button>
+                        <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.goToList.bind(this)}>목록으로</button>
                     </div>
                 </div>
+            </div>
             </>
         );
     }
