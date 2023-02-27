@@ -62,7 +62,12 @@
  padding-bottom: 95px;
  color: #000;
 }
-
+.Pimg{
+  padding-bottom: 1.875rem;
+}
+.Pimg1{
+  padding-bottom: 1.81em;
+}
 @media(min-width: 992px){
   .main{
     max-width: 100%;
@@ -107,10 +112,5 @@
     position: static;
     transform:none;
   }
-  .display-6 {
-    text-decoration: none !important;
-    color: #fff !important;
-    font-weight: 500 !important;
-    font-family: 'Noto Sans KR';
-  }
+  
 }
