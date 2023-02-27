@@ -62,54 +62,6 @@
  padding-bottom: 95px;
  color: #000;
 }
-.col{
-  display: flex;
-  justify-content: center;
-}
-.Pimg{
-  max-width: 100%;
-  display: block;
-}
-.Pimg1{
-  width: 578px;
-  margin-bottom: 3.413rem !important;
-  text-align: center;
-  flex-wrap: wrap;
-  object-fit: cover;
-}
-.Pimg2{
-  width: 572px;
-  margin-bottom: 3.413rem !important;
-  text-align: center;
-}
-.Pimg3{
-  width: 572px;
-  margin-bottom: 3.413rem !important;
-}
-.Pimg4{
-  width: 578px;
-  margin-bottom: 3.413rem !important;
-}
-.Pimg5{
-  width: 573px;
-  margin-bottom: 3.413rem !important;
-}
-.Pimg6{
-  width: 578px;
-  margin-bottom: 3.413rem !important;
-}
-.Pimg7{
-  width: 578px;
-  margin-bottom: 3.413rem !important;
-}
-.Pimg8{
-  width: 578px;
-  margin-bottom: 3.413rem !important;
-}
-.Pimg9{
-  width: 579px;
-  margin-bottom: 3.413rem !important;
-}
 
 @media(min-width: 992px){
   .main{
@@ -160,67 +112,5 @@
     color: #fff !important;
     font-weight: 500 !important;
     font-family: 'Noto Sans KR';
-  }
-  .content{
-    margin-top: 230px;
-    text-align: center;
-  }
-  .col {
-    display: block;
-    margin: 0 38px;
-  }
-  .Pimg1{
-    width: 578px;
-    height: 722px;
-    margin-bottom: 4.875rem !important;
-    float: left;
-  }
-  .Pimg2{
-    width: 572px;
-    height: 381px;
-    margin-bottom: 4.875rem !important;
-    float: right;
-  }
-  .Pimg3{
-    width: 572px;
-    height: 383px;
-    margin-bottom: 4.875rem !important;
-    float: right;
-  }
-  .Pimg4{
-    width: 578px;
-    height: 730px;
-    margin-bottom: 4.875rem !important;
-    float: left;
-  }
-  .Pimg5{
-    margin-bottom: 4.875rem !important;
-    width: 573px;
-    height: 716px;
-    float: right;
-  }
-  .Pimg6{
-    margin-bottom: 4.875rem !important;
-    width: 578px;
-    height: 376px;
-    float: left;
-  }
-  .Pimg7{
-    margin-bottom: 4.875rem !important;
-    width: 578px;
-    height: 608px;
-    float: right;
-  }
-  .Pimg8{
-    margin-bottom: 4.875rem !important;
-    width: 578px;
-    height: 724px;
-    float: left
-  }
-  .Pimg9{
-    margin-bottom: 4.875rem !important;
-    width: 579px;
-    height: 385px;
-    float: right;
   }
 }
