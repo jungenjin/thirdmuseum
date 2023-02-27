@@ -24,38 +24,25 @@
 .dropdown-item {font-size:18px}
 
 /* footer */
-footer{
-  clear: both;
-  height: 218px;
-  margin-top: 100px;
-}
-.FtextBox{
-  padding-top: 72px;
+.footer{
+  margin-top: 10.625rem;
+  margin-bottom:3.125rem;
 }
 .Ftext{
-  font-size: 0.875rem;
+  display:inline-block;
+  color:#000;
+  font-size: 1.125rem;
   font-weight: 500;
-  float: left;
   margin-right: 2.625rem;
-  margin-bottom: 30px;
+  margin-bottom:30px;
 }
 .FSubtext {
-  clear: both;
-  font-size: 0.875rem;
-  font-weight: 400;
+  font-size: 1.125rem;
 }
 
 @media (min-width: 992px) {
   .Ftext{
-    font-size: 1.125rem;
-    font-weight: 500;
-    float: left;
     margin-right: 60px;
-  }
-  .FSubtext {
-    clear: both;
-    font-size: 1.125rem;
-    font-weight: 400;
   }
 }
 
