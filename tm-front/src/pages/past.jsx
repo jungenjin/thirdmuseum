@@ -1,5 +1,6 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import SubVisual from '../common/SubVisual';
+import '../style/intro.css';
 
 function past(){
     return(
@@ -25,13 +26,13 @@ function past(){
                     <img src="/resource/display/past_3.png" alt="past3" className="ratio"/>
                     <div className="py-4">
                         <p className="fs-5 fw-bold text-wrap">김순기: 게으른 구름</p>
-                        <p>2022-11-25 ~ 2022-12-04 </p>
+                        <p>2022-11-25 ~ 2022-12-04</p>
                     </div>
                 </Col>
                 <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
                     <img src="../resource/display/past_4.png" alt="past4" className='ratio'/>
                     <div className='py-4'>
-                        <p className="fs-5 fw-bold">MMCA 청주프로젝트 2022 «도시공명»</p>
+                        <p className="fs-5 fw-bold text-wrap">MMCA 청주프로젝트 2022 «도시공명»</p>
                         <p className="fs-6 my-2">2022-08-24 ~ 2022-11-27</p>
                     </div>
                 </Col>
