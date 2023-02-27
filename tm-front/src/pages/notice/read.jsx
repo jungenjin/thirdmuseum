@@ -54,8 +54,6 @@ class NoticeRead extends Component {
     }
 
     render() {
-        const content = this.state.ntcContent;
-    //     const content1 = content.split('\n');
         return (
             <>
             <SubVisual name={'공지사항'} imgName={'notice'} />
