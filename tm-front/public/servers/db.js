@@ -1,4 +1,4 @@
-﻿import oracledb from "oracledb"; // 오라클 DB연동을 위한 라이브러리
+﻿﻿import oracledb from "oracledb"; // 오라클 DB연동을 위한 라이브러리
 
 oracledb.autoCommit = true; // 자동 커밋을 하도록 설정
 

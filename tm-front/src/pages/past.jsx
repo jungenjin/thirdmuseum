@@ -1,6 +1,5 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import SubVisual from '../common/SubVisual';
-import '../style/intro.css';
 
 function past(){
     return(

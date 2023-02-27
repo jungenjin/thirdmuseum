@@ -107,19 +107,19 @@ const Login = () => {
       <div className="column">
 
         <NaverLogin
-          clientId="PckNTs2JD903WZgtj1x0" // 옆에 네이버 클라이언트 ID 수정 바랍니다
-          callbackUrl="http://localhost:3000/"
-          render={(props) => (
-            <div onClick={props.onClick}>
-              <button className="btnnaverlogin" type="submit"><b className="Nv">N </b> 네이버 로그인</button>
-            </div>
-          )}
-          onSuccess={(res) => responseLogin(res, "naver")}
-          onFailure={() => console.log("naver login fail")} />
-      </div>
-    </div>
-    </>
-  );
+clientId="PckNTs2JD903WZgtj1x0" // 옆에 네이버 클라이언트 ID 수정 바랍니다
+callbackUrl="http://localhost:3000/"
+render={(props) => (
+  <div onClick={props.onClick}>
+    <button className="btnnaverlogin" type="submit"><b className="Nv">N </b> 네이버 로그인</button>
+  </div>
+)}
+onSuccess={(res) => responseLogin(res, "naver")}
+onFailure={() => console.log("naver login fail")} />
+</div>
+</div>
+</>
+);
 };
 
 export default Login;

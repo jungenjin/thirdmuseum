@@ -56,7 +56,7 @@ app.post("/api/naverlogin", (req, res) => {
     }else {
       res.json({success:true, msg: `${name}님 환영합니다.`});
     }
-    
+
   });
 })
 
