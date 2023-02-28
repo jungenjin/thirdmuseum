@@ -45,7 +45,7 @@ class NoticeList extends Component {
                                 this.state.boards.map(
                                     board => 
                                     <tr key = {board.ntcNo}>
-                                        <td className='pt-4 pb-4 text-center d-none d-lg-table-cell' style={{width:'80px'}}>{board.ntcNo}</td>
+                                        <td className='pt-4 pb-4 text-center d-none d-lg-table-cell'>{board.ntcNo}</td>
                                         <td className='pt-4 pb-4'><a href='#!' onClick = {() => this.readBoard(board.ntcNo)} className='h5 text-dark'>{board.ntcTitle}</a></td>
                                     </tr>
                                 )
