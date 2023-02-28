@@ -26,9 +26,6 @@
     margin-bottom: 3%;
 }
 
-.location_info
-{
-    width: 1920px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.location_info{
+    font-weight: bold;
 }
