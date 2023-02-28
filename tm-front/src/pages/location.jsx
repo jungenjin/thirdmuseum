@@ -1,8 +1,8 @@
 /* global kakao */
 import React, { useEffect } from "react";
-import cn from "classnames";
 import '../style/location.css'
 import SubVisual from '../common/SubVisual';
+import {Container, Row, Col} from 'react-bootstrap';
 
 
 function Location() {
@@ -29,23 +29,20 @@ function Location() {
       
         })
     return(
-        <section>
-            <SubVisual name={'오시는길'} imgName='' />
-                <h1 calss="location_title">찾아오시는 길</h1>
-            <div className="location_wrap">
-                <div className="contianer-xxl">
-                    <div className="row">
-                        <div className="col-12">
-        	                <div id="map" style={{ width: "100%", height: "800px"}}></div> 
-                        </div>
+        <>
+            <SubVisual name={'찾아오시는길'} imgName='' />
+                    <div class= "col-12">
+  	                <div id="map" style={{ width: "100%", height: "800px"}}></div> 
                     </div>
-                    <div className="row">
-                        <div className="col-4">
+                <Container fluid="xxl">
+                        <Row>
+                        <Col xs={1} />
+                        <Col xs={3}>
                             <p>위치</p>
                             <p>서울시 금천구 범안로 9길 23<br/>
                             지하철 1호선 독산역 1번출구</p>
-                        </div>
-                        <div className="col-4"> 
+                        </Col>
+                        <Col xs={4}> 
                             <p class="location_info1">운영 시간</p>
                             <p class="location_info2">평일 &#40;화~금&#41; <br/>
                             토 &#183; 일 &#183; 공휴일<br/>
@@ -60,16 +57,16 @@ function Location() {
                             매주 월요일 휴관<br/>
                             정기휴관 &#40;1월 1일&#41;<br/>
                             </p>
-                        </div>
-                        <div className="col-4">
+                        </Col>
+                        <Col xs={3}>
                         <p>Contact</p>
                         <p>thirdam@third-artmuseum.com<br/>
                             02-2345-6789</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        </Col>
+                        <Col xs={1} />
+                        </Row>
+                        </Container>
+                        </>
             
     )
 };
