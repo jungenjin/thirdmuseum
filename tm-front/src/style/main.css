@@ -6,7 +6,7 @@
 .main{
   max-width: 100%;
   z-index: -1;
-  height: 864px;
+  height: 745px;
   background-image:url(../resource/main/Main2.png), url(../resource/main/Main1.png); background-size:483px 373px, 513px 375px; background-position:right 0px, left 23.2rem; background-repeat:no-repeat;
 }
 .h4{
@@ -53,8 +53,7 @@
   font-family: 'Noto Sans KR';
 }
 .content{
-  margin-top: 161px;
-  text-align: center;
+  margin-top: 10.125rem;
 }
 .Ptext{
  font-family: 'Playfair Display';
@@ -62,7 +61,12 @@
  padding-bottom: 95px;
  color: #000;
 }
-
+.Pimg{
+  padding-bottom: 1.875rem;
+}
+.Pimg1{
+  padding-bottom: 1.15em;
+}
 @media(min-width: 992px){
   .main{
     max-width: 100%;
@@ -107,10 +111,13 @@
     position: static;
     transform:none;
   }
-  .display-6 {
-    text-decoration: none !important;
-    color: #fff !important;
-    font-weight: 500 !important;
-    font-family: 'Noto Sans KR';
+  .content{
+    margin-top: 10.125rem;
+  }
+  .Pimg{
+    padding-bottom: 1.875rem;
+  }
+  .Pimg1{
+    padding-bottom: 1.81em;
   }
 }

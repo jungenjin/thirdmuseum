@@ -3,7 +3,9 @@ package com.springboot.react.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.DynamicInsert;
@@ -17,20 +19,18 @@ import lombok.Data;
 @Entity
 @Table(name = "TB_NOTICE")
 public class Board {
+	//글번호
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "TB_NOTICE_SEQ")
+	@SequenceGenerator(sequenceName = "NTC_NO_SEQ", allocationSize = 1, name = "TB_NOTICE_SEQ")
 	@Column(name = "NTC_NO")
 	private Integer ntcNo;
 	
+	//제목
 	@Column(name = "NTC_TITLE")
 	private String ntcTitle;
 	
+	//내용
 	@Column(name = "NTC_CONTENT", length=4000)
 	private String ntcContent;
-	
-//	@Column(name = "NTC_REG_ID")
-//	private String ntcRegId;
-//	
-//	@Column(name = "NTC_REG_DATE")
-//	private String ntcRegDate;
 }

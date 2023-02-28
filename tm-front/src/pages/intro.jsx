@@ -1,19 +1,17 @@
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import {Container, Row, Col} from 'react-bootstrap';
 import SubVisual from '../common/SubVisual';
-import '../style/intro.css'
 
 function intro(){
     return(
         <>
         <SubVisual name={'미술관소개'} imgName={'intro'} />
-        <div className='container-xxl'>
+        <Container fluid="xxl">
           <Row>
-            <Col xs={4} md={4} lg={4}>
-              <div className="welcome">세번째미술관에<br/>오신 걸 환영합니다</div>
+            <Col xs={12} sm={4} lg={3} className="px-3 pb-3">
+              <div className="fs-2 fw-bold text-wrap">세번째 미술관에 오신 걸 환영합니다</div>
             </Col>
-            <Col xs={8} md={8} lg={8}>
-              <div className="welcomeTxt">
+            <Col xs={12} sm={8} lg={9} className="px-3 pb-5">
+              <div className="fs-6 text-wrap">
                 세번째미술관은 개관 반세기의 역사를 자랑하는 국내 유일의 국가현대미술관입니다.
                 우리 미술관은 서울관, 과천관, 덕수궁관, 청주관의 4관 체제에서 이제 대전관 신설로 5관 체제로 진입하고 있습니다.
                 우리 미술관은 ‘확장과 연결’로 열린 미술관을 지향하고 있습니다. 생활 속에서 삶의 질을 높이고, 감동과 상상력의 
@@ -27,53 +25,43 @@ function intro(){
               </div>
             </Col>
           </Row>
-          <Row>
-              <Col xs={12} md={12} lg={12}>
-                <div className="introSub">history</div>
-              </Col>
+          <Row className='py-4 mt-5'>
+            <Col className="fs-1 text-center fw-bold text-wrap">history</Col>
           </Row>
-          <Row>
-            <Col xs={12} md={6} lg={6}>
+          <Row className='py-4'>
+            <Col xs={12} sm={6}>
+                <img src="../resource/intro/intro_1.png" alt="intro1" className="ratio pb-4 past"/>
             </Col>
-            <Col xs={12} md={6} lg={6}>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} md={6} lg={6}>
-            <div className="historyTxt">2012.02.09<br/>개관</div>
-            </Col>
-            <Col xs={12} md={6} lg={6}>
-            <div className="historyTxt">2018.05.08<br/>c홀 신설</div>
+            <Col xs={12} sm={6}>
+                <img src="../resource/intro/intro_2.png" alt="intro2" className="ratio pb-4 past"/>
             </Col>
           </Row>
-          <Row>
-            <Col xs={12} md={6} lg={6}>
-                <img src="../resource/intro/intro_1.png" alt="intro1" className="historyImg"/>
+          <Row className='py-4'>
+            <Col xs={12} sm={6}>
+            <div className="fs-1 text-center text-white fw-bold">2012.02.09<br/>개관</div>
             </Col>
-            <Col xs={12} md={6} lg={6}>
-                <img src="../resource/intro/intro_2.png" alt="intro2" className="historyImg"/>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} md={12} lg={12} className="introSub">
-              <div className="introSub">vision</div>
+            <Col xs={12} sm={6}>
+            <div className="fs-1 text-center text-white fw-bold">2018.05.08<br/>c홀 신설</div>
             </Col>
           </Row>
+          <Row className='py-5'>
+            <Col className="fs-1 text-center fw-bold">vision</Col>
+          </Row>
           <Row>
-            <Col xs={12} md={6} lg={3}>
-                <img src="../resource/intro/intro_3.png" alt="intro3" className="visionImg"/>
+            <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
+                <img src="../resource/intro/intro_3.png" alt="intro3" className="ratio"/>
             </Col>
-            <Col xs={12} md={6} lg={3}>
-                <img src="../resource/intro/intro_4.png" alt="intro4" className="visionImg"/>
+            <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
+                <img src="../resource/intro/intro_4.png" alt="intro4" className="ratio"/>
             </Col>
-            <Col xs={12} md={6} lg={3}>
-                <img src="../resource/intro/intro_5.png" alt="intro5" className="visionImg"/>
+            <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
+                <img src="../resource/intro/intro_5.png" alt="intro5" className="ratio"/>
             </Col>
-            <Col xs={12} md={6} lg={3}>
-                <img src="../resource/intro/intro_6.png" alt="intro6" className="visionImg"/>
+            <Col xs={12} sm={6} md={4} lg={3} className="px-3 pb-5">
+                <img src="../resource/intro/intro_6.png" alt="intro6" className="ratio"/>
             </Col>
           </Row>
-        </div>
+        </Container>
         </>
         );
     }
