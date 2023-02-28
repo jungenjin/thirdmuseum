@@ -49,3 +49,10 @@
 .Nv{
     font-weight: 900;
 }
+
+.login__checkbox{
+    margin: 0px !important;
+}
+.mdc-checkbox__checkmark{
+    display: none;
+}

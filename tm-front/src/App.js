@@ -17,6 +17,7 @@ import NoticeRead from './pages/notice/read';
 import login from './pages/login';
 import './style/common.css';
 import './style/custom.css'; //bootstrap scss custom
+import Callback from "./pages/Callback"; //네이버로그인 콜백페이지
 
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -39,6 +40,7 @@ function App() {
         <Route exact path="/reserve" component={Reserve} />
         <Route path="/reserveOk" component={ReserveOk} />
         <Route exact path="/login" component={login} />
+        <Route exact path="/management-callback" component={Callback} />
       </Switch>
     <Footer/>
     </>

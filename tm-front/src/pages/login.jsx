@@ -2,10 +2,13 @@
 
 import React, { useEffect, useState } from "react";
 import { Link, Redirect, useHistory } from "react-router-dom";
+import { TextField } from "@rmwc/textfield"; // React Material 디자인 TextField 컴포넌트입니다.
+import { Button } from "@rmwc/button"; // React Material 디자인 Button 컴포넌트 입니다.
+import { Checkbox } from "@rmwc/checkbox"; //React Material 디자인 Checkbox 컴포넌트 입니다.
 import NaverLogin from "react-login-by-naver";
-import axios from "axios";
-import '../style/login.css';
-import SubVisual from '../common/SubVisual';
+import "@rmwc/button/styles"; // React Material Button 디자인 CSS 입니다.
+import "@rmwc/textfield/styles"; // React Material TextField 디자인 CSS 입니다.
+import "../style/login.css"; // 이 페이지의 커스텀 디자인을 위한 CSS 입니다.
 
 const Login = () => {
   const history = useHistory(); // 라우팅을 위한 히스토리 객체
@@ -20,7 +23,7 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("/login") === "true") {
+    if (localStorage.getItem("login") === "true") {
       alert("이미 로그인 상태입니다.");
       history.push("/main");
     }
@@ -75,51 +78,52 @@ const Login = () => {
 
   }
 
-  // 로그인
+  // 아래는 JSX 껍데기
   return (
-    <>
-    <SubVisual name={'로그인'} imgName={''} /><div className="wrapper">
+    <div className="wrapper">
       <div className="column">
-        <input
+        <TextField
           outlined
-          label="아이디"
           className="userId inputlogin"
           name="userId"
           placeholder="아이디를 입력해주세요."
-          onChange={handleInputChange} />
-
+          onChange={handleInputChange}
+        />
       </div>
 
       <div className="column">
-
-        <input
+        <TextField
           outlined
-          label="비밀번호"
           className="userPw inputlogin"
           name="userPw"
           type="password"
           placeholder="비밀번호를 입력해주세요."
-          onChange={handleInputChange} />
+          onChange={handleInputChange}
+        />
       </div>
-      <br />
-      <button className="btnlogin" label="로그인" raised onClick={handleSubmit}>로그인</button>
-      <hr />
-      <div className="column">
 
+      <div className="column">
+        <Checkbox label="로그인 상태 유지" className="login__checkbox" checked={checked} onChange={evt => setChecked(!!evt.currentTarget.checked)} />
+      </div>
+      <br/>
+      {/* <Link to="/main"> */}
+        <button className="btnlogin" label="로그인" raised onClick={handleSubmit}>로그인</button>
+      {/* </Link> */}
+      <hr/>
+      <div className="column">
         <NaverLogin
-clientId="PckNTs2JD903WZgtj1x0" // 옆에 네이버 클라이언트 ID 수정 바랍니다
-callbackUrl="http://localhost:3000/"
-render={(props) => (
-  <div onClick={props.onClick}>
-    <button className="btnnaverlogin" type="submit"><b className="Nv">N </b> 네이버 로그인</button>
-  </div>
-)}
-onSuccess={(res) => responseLogin(res, "naver")}
-onFailure={() => console.log("naver login fail")} />
-</div>
-</div>
-</>
-);
+          clientId="PckNTs2JD903WZgtj1x0"
+          callbackUrl="http://192.168.35.115:3000/management-callback"
+          render={(props) => 
+          <div onClick={props.onClick}>
+            <button className="btnnaverlogin" type="submit"><b className="Nv">N </b> 네이버 로그인</button>
+          </div>}
+          onSuccess={(res) => responseLogin(res, "naver")}
+          onFailure={() => console.log("naver login fail")}
+        />
+      </div>
+    </div>
+  );
 };
 
 export default Login;

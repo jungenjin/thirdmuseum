@@ -1,4 +1,4 @@
-﻿﻿import oracledb from "oracledb"; // 오라클 DB연동을 위한 라이브러리
+﻿import oracledb from "oracledb"; // 오라클 DB연동을 위한 라이브러리
 
 oracledb.autoCommit = true; // 자동 커밋을 하도록 설정
 
@@ -8,8 +8,8 @@ export const getRows = (sql) => {
     oracledb.getConnection(
       // 오라클과 커넥션
       {
-        user: "TEST", // DB의 USER 이름
-        password: "TEST1234", // DB의 비밀번호
+        user: "admin_third", // DB의 USER 이름
+        password: "admin_third", // DB의 비밀번호
         connectString: "orcl", // DB의 이름
       },
       function (err, connection) {
@@ -35,8 +35,8 @@ export const getResult = (sql) => {
     oracledb.getConnection(
       // 위와동일
       {
-        user: "TEST",
-        password: "TEST1234",
+        user: "admin_third",
+        password: "admin_third",
         connectString: "orcl",
       },
       function (err, connection) {
