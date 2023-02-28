@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springboot.react.service.ReserveService;
 import com.springboot.react.model.Reserve;
+import com.springboot.react.service.ReserveService;
 
 @RestController
 public class ReserveController {

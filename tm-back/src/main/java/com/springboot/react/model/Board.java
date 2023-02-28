@@ -22,7 +22,7 @@ public class Board {
 	//글번호
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "TB_NOTICE_SEQ")
-	@SequenceGenerator(sequenceName = "NTC_NO_SEQ", allocationSize = 1, name = "TB_NOTICE_SEQ")
+	@SequenceGenerator(sequenceName = "TB_NOTICE_SEQ", allocationSize = 1, name = "TB_NOTICE_SEQ")
 	@Column(name = "NTC_NO")
 	private Integer ntcNo;
 	
