@@ -38,12 +38,12 @@ function Location() {
                         <Row>
                         <Col xs={1} />
                         <Col xs={3}>
-                            <p>위치</p>
+                            <p class="location_info">위치</p>
                             <p>서울시 금천구 범안로 9길 23<br/>
                             지하철 1호선 독산역 1번출구</p>
                         </Col>
                         <Col xs={4}> 
-                            <p class="location_info1">운영 시간</p>
+                            <p class="location_info">운영 시간</p>
                             <p class="location_info2">평일 &#40;화~금&#41; <br/>
                             토 &#183; 일 &#183; 공휴일<br/>
                             문화가 있는 날 운영<br/>
@@ -59,7 +59,7 @@ function Location() {
                             </p>
                         </Col>
                         <Col xs={3}>
-                        <p>Contact</p>
+                        <p class="location_info">Contact</p>
                         <p>thirdam@third-artmuseum.com<br/>
                             02-2345-6789</p>
                         </Col>

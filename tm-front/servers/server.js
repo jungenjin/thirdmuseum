@@ -3,7 +3,7 @@ import cors from "cors"; //local서버 환경에서 API 연동을 위해서 cors
 import bodyParser from "body-parser"; // 요청을 parser해주는 라이브러리
 import multer from "multer"; // 파일 업로드 라이브러리
 import path from "path"; // 경로 관련 라이브러리
-import { getRows, getResult } from "./db"; // db.js에서 설명완료
+import { getRows, getResult } from "./db.js"; // db.js에서 설명완료
 
 const app = express();
 app.use(cors());
