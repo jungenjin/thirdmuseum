@@ -15,12 +15,12 @@ public class ReserveServiceImpl implements ReserveService {
 		dao.save(reserve);
 	}
 	
-	public void update(Reserve article) {
+	public void update(Reserve reserve) {
 		Reserve curReserve = dao.findTopByOrderByResNoDesc();
-		curReserve.setResRegId(article.getResRegId());
-		curReserve.setResDate(article.getResDate());
-		curReserve.setResTime(article.getResTime());
-		curReserve.setResPersoner(article.getResPersoner());
+		curReserve.setResRegId(reserve.getResRegId());
+		curReserve.setResDate(reserve.getResDate());
+		curReserve.setResTime(reserve.getResTime());
+		curReserve.setResPersoner(reserve.getResPersoner());
 		dao.save(curReserve);
 	}
 	
