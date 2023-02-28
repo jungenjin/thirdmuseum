@@ -48,8 +48,8 @@ class InputForm extends Component {
         }
 
         let form = new FormData();
-        form.append("resDate", resDate);
         form.append("resRegId", resRegId);
+        form.append("resDate", resDate);
         form.append("resTime", resTime);
         form.append("resPersoner", resPersoner);
         if (crud !== "Insert") {
