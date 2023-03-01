@@ -80,7 +80,6 @@ const Login = () => {
       <div className="wrapper loginform form-control-lg">
         <div className="column">
           <input
-            outlined
             className="userId inputlogin ms-1"
             name="userId"
             id="id"
@@ -91,7 +90,6 @@ const Login = () => {
 
         <div className="column">
           <input
-            outlined
             className="userPw inputlogin ms-1"
             name="userPw"
             type="password"
@@ -102,7 +100,7 @@ const Login = () => {
 
         <br/>
         {/* <Link to="/main"> */}
-          <button className="btnlogin ms-1 fs-2" label="로그인" raised onClick={handleSubmit}>로그인</button>
+          <button className="btnlogin ms-1 fs-2" label="로그인" onClick={handleSubmit}>로그인</button>
         {/* </Link> */}
         <hr/>
         <div className="column">
