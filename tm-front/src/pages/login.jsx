@@ -41,6 +41,8 @@ const Login = () => {
       .then((result) => result.json())
       .then((data) => {
         if (data.success === true) {
+          localStorage.setItem("login", true); //로그인 처리
+          localStorage.setItem("login_type", "admin"); // 로그인 타입 저장
           /* 로그인상태유지 체크박스가 체크되어 있으면, localStorage에 저장 */
           if (checked) {
             localStorage.setItem("login", true);
