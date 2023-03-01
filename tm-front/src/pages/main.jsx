@@ -1,18 +1,11 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-
-import { Button } from "@rmwc/button"; // React Material 디자인 Button 컴포넌트 입니다.
 import '../style/main.css';
 
-
 function Main() {
-
-
   return (
-    
     <div className="Main">
-
       <section className="App-Main">
         <section className="main">
         <Container fluid="xxl">
