@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors"; //local서버 환경에서 API 연동을 위해서 cors 라이브러리를 설치했습니다.
 import bodyParser from "body-parser"; // 요청을 parser해주는 라이브러리
-import { getRows, getResult } from "./db.js"; // db.js에서 설명완료
+import { getRows } from "./db.js"; // db.js에서 설명완료
 
 const app = express();
 app.use(cors());

@@ -1,13 +1,7 @@
 /* 로그인 페이지 */
-
 import React, { useEffect, useState } from "react";
-import { Link, Redirect, useHistory } from "react-router-dom";
-import { TextField } from "@rmwc/textfield"; // React Material 디자인 TextField 컴포넌트입니다.
-import { Button } from "@rmwc/button"; // React Material 디자인 Button 컴포넌트 입니다.
-import { Checkbox } from "@rmwc/checkbox"; //React Material 디자인 Checkbox 컴포넌트 입니다.
+import {useHistory } from "react-router-dom";
 import NaverLogin from "react-login-by-naver";
-import "@rmwc/button/styles"; // React Material Button 디자인 CSS 입니다.
-import "@rmwc/textfield/styles"; // React Material TextField 디자인 CSS 입니다.
 import "../style/login.css"; // 이 페이지의 커스텀 디자인을 위한 CSS 입니다.
 
 const Callback = () => {
@@ -65,53 +59,14 @@ const Callback = () => {
 
   // 아래는 JSX 껍데기
   return (
-    <div className="wrapper">
       <div className="column">
-        아이디:&nbsp;
-        <TextField
-          outlined
-          label="아이디"
-          className="userId loginInput"
-          name="userId"
-          onChange={handleInputChange}
-        />
-        {/* <Link to="/main"> */}
-        <Button label="로그인" raised onClick={handleSubmit} />
-        {/* </Link> */}
-      </div>
-
-      <div className="column">
-        &nbsp;비밀번호:
-        <TextField
-          outlined
-          label="비밀번호"
-          className="userPw loginInput"
-          name="userPw"
-          type="password"
-          onChange={handleInputChange}
-        />
-        <Link to="/register">
-          <Button label="회원 가입" raised />
-        </Link>
-      </div>
-
-      <div className="column">
-        <Checkbox label="로그인 상태 유지" className="login__checkbox" checked={checked} onChange={evt => setChecked(!!evt.currentTarget.checked)} />
-        <Link to="/forgot">
-          <p className="forgot__text">아이디 / 비밀번호 찾기</p>
-        </Link>
-      </div>
-
-      <div className="column">
-
         <NaverLogin
           clientId="PckNTs2JD903WZgtj1x0"
           callbackUrl="http://192.168.35.115:3000/management-callback"
-          render={(props) => <div onClick={props.onClick}><img src="/naver-login.PNG" /></div>}
+          render={(props) => <div onClick={props.onClick}></div>}
           onSuccess={(res) => responseLogin(res, "naver")}
         />
       </div>
-    </div>
   );
 };
 

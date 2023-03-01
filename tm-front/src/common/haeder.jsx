@@ -1,6 +1,4 @@
 import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap';
-// eslint-disable-next-line no-restricted-globals
-import { Link, useHistory } from "react-router-dom";
 
 function Header() {
     const logoutFunc = () => {
@@ -11,8 +9,6 @@ function Header() {
         }
     
         alert("로그아웃 되었습니다.");
-        // eslint-disable-next-line no-restricted-globals
-        history.push("/");
       }
     return (
         <Navbar expand="lg" className="py-3">
