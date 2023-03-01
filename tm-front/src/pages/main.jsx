@@ -35,18 +35,18 @@ function Main() {
                 <Row>
                   <Col md={1}></Col>
                     <Col xs={12} md={5} className="me-4"> 
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview1.png'} className="img-fluid mb-5 Pimg"/>
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview4.png'} className="img-fluid mb-5 Pimg"/>
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview6.png'} className="img-fluid mb-5 Pimg"/>
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview8.png'} className="img-fluid mb-5 Pimg"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview1.png'} className="img-fluid mb-5 Pimg" alt='Preview1'/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview4.png'} className="img-fluid mb-5 Pimg" alt='Preview2'/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview6.png'} className="img-fluid mb-5 Pimg" alt='Preview3'/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview8.png'} className="img-fluid mb-5 Pimg" alt='Preview4'/>
                     </Col>
               
                     <Col xs={12} md={5}>
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview2.png'} className="img-fluid mb-5 Pimg1"/>
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview3.png'} className="img-fluid mb-5 Pimg1"/>
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview5.png'} className="img-fluid mb-5 Pimg1"/>
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview7.png'} className="img-fluid mb-5 Pimg1"/>
-                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview9.png'} className="img-fluid"/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview2.png'} className="img-fluid mb-5 Pimg1" alt='Preview5'/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview3.png'} className="img-fluid mb-5 Pimg1" alt='Preview6'/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview5.png'} className="img-fluid mb-5 Pimg1" alt='Preview7'/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview7.png'} className="img-fluid mb-5 Pimg1" alt='Preview8'/>
+                      <img src={process.env.PUBLIC_URL + '/resource/main/Preview9.png'} className="img-fluid" alt='Preview9'/>
                     </Col>
                     <Col md={1}></Col>
                 </Row>
