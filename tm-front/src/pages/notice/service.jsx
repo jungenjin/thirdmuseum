@@ -1,6 +1,7 @@
 import axios from 'axios'; 
 
-const BASE_URL = "http://localhost:9008/notice"; 
+//ip 주소 바꿔야함
+const BASE_URL = "http://192.168.35.164:9008/notice"; 
 
 class BoardService {
    

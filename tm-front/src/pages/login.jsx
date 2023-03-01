@@ -1,12 +1,12 @@
 /* 로그인 페이지 */
 import React, { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+//import { useHistory } from "react-router-dom";
 import NaverLogin from "react-login-by-naver";
 import SubVisual from '../common/SubVisual';
 import "../style/login.css"; // 이 페이지의 커스텀 디자인을 위한 CSS 입니다.
 
 const Login = () => {
-  const history = useHistory(); // 라우팅을 위한 히스토리 객체
+  //const history = useHistory(); // 라우팅을 위한 히스토리 객체
   const [formData, setFormData] = useState(null);
   const [checked] = useState(false);
   const handleInputChange = (e) => {
@@ -20,13 +20,15 @@ const Login = () => {
   useEffect(() => {
     if (localStorage.getItem("login") === "true") {
       alert("이미 로그인 상태입니다.");
-      history.push("/main");
+      //history.push("/main");
+      //사이트 새로고침을 위해 코드 수정
+      window.location.replace('/');
     }
   });
 
   const handleSubmit = () => {
     // 로그인 버튼을 눌렀을때 동작합니다.
-    fetch("http://192.168.35.115:3001/api/login", {
+    fetch("http://192.168.35.164:3001/api/login", {
       headers: {
         "Content-Type": "application/json", // 파일업로딩이 없으니 json 타입입니다.
         Accept: "application/json",
@@ -44,7 +46,9 @@ const Login = () => {
             localStorage.setItem("login", true);
           }
           // 서버로부터 true가 나오면, 2페이지로 이동하고, 환영합니다 메세지를 띄웁니다.
-          history.push("/main");
+          //history.push("/main");
+          //사이트 새로고침을 위해 코드 수정
+          window.location.replace('/');
         }
         alert(data.msg);
       });
@@ -55,7 +59,7 @@ const Login = () => {
     localStorage.setItem("login", true); //로그인 처리
     localStorage.setItem("login_type", "naver"); // 로그인 타입 저장
 
-    fetch("http://192.168.35.115:3001/api/naverlogin", {
+    fetch("http://192.168.35.164:3001/api/naverlogin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json", // 파일업로딩이 없으니 json 타입입니다.
@@ -64,7 +68,9 @@ const Login = () => {
       body: JSON.stringify(res)
     }).then(result => result.json()).then(data => {
       alert(data.msg);  // 알럿
-      history.push("/main"); // 메인페이지로 이동
+      //history.push("/main"); // 메인페이지로 이동
+      //사이트 새로고침을 위해 코드 수정
+      window.location.replace('/');
     })
   }
 
@@ -101,8 +107,8 @@ const Login = () => {
         <hr/>
         <div className="column">
           <NaverLogin
-            clientId="PckNTs2JD903WZgtj1x0"
-            callbackUrl="http://192.168.35.115:3000/management-callback"
+            clientId="QuyzPC1j7lv9zeOQOeHZ"
+            callbackUrl="http://192.168.35.164:3000/management-callback"
             render={(props) => 
             <div onClick={props.onClick}>
               <button className="btnnaverlogin ms-1 fs-2" type="submit"><b className="Nv">N </b> 네이버 로그인</button>

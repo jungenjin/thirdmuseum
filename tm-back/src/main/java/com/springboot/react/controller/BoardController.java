@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.springboot.react.model.Board;
 import com.springboot.react.service.BoardService;
 
-@CrossOrigin(origins = "http://localhost:3000") //CORS 문제를 해결하기 위해 추가
+@CrossOrigin(origins = "http://192.168.35.164:3000") //CORS 문제를 해결하기 위해 추가
 @RestController
 //@RequestMapping("/api")
 public class BoardController {
