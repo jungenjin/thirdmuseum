@@ -19,8 +19,6 @@ import './style/common.css';
 import './style/custom.css'; //bootstrap scss custom
 import Callback from "./pages/Callback"; //네이버로그인 콜백페이지
 
-//import 'bootstrap/dist/css/bootstrap.min.css';
-
 function App() {
   return (
     <>
