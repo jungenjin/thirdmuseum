@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import BoardService from './service';
 import SubVisual from '../../common/SubVisual';
 
+const loginType = localStorage.getItem("login_type");
+console.log("loginType", loginType);
+
 class NoticeRead extends Component {
     constructor(props) {
         super(props);
@@ -72,8 +75,12 @@ class NoticeRead extends Component {
                 </table>
                 <div className="row justify-content-end pt-4">
                     <div className='col-auto'>
-                        <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.goToUpdate}>글 수정하기</button>
-                        <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={() => this.deleteView()}>글 삭제하기</button>
+                        {
+                            loginType === 'admin' && <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={() => this.deleteView()}>글 삭제하기</button>
+                        }   
+                        {
+                            loginType === 'admin' && <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.goToUpdate}>글 수정하기</button>
+                        }   
                         <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.goToList.bind(this)}>목록으로</button>
                     </div>
                 </div>

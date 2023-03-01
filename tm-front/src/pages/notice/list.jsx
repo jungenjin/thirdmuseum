@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import BoardService from './service';
 import SubVisual from '../../common/SubVisual';
 
+const loginType = localStorage.getItem("login_type");
+console.log("loginType", loginType);
+
 class NoticeList extends Component {
     constructor(props) {
         super(props) 
@@ -55,7 +58,11 @@ class NoticeList extends Component {
                 </div>
                 <div className="row justify-content-end pt-4">
                     <div className='col-auto'>
-                        <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.createBoard}>새 글 쓰기</button>
+                        {
+                            loginType === 'admin'
+                            ? <button className="btn btn-dark btn-lg ms-4 mt-4" onClick={this.createBoard}>새 글 쓰기</button>
+                            : ''
+                        }   
                     </div>
                 </div>
             </div>
