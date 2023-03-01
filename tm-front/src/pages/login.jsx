@@ -22,7 +22,7 @@ const Login = () => {
       alert("이미 로그인 상태입니다.");
       history.push("/main");
     }
-  }, []);
+  });
 
   const handleSubmit = () => {
     // 로그인 버튼을 눌렀을때 동작합니다.

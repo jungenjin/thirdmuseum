@@ -20,7 +20,6 @@ app.post("/api/login", (req, res) => {
       res.json({ success: false, msg: "아이디가 존재하지 않습니다." });
     } else {
       // 그 반대로는 계정이 존재한다는 소리이니, 환영한다는 메세지를 뿌려줍니다.
-
       res.json({ success: true, msg: `${result[0][1]}님 환영합니다.` });
     }
     res.end();
@@ -46,11 +45,7 @@ app.post("/api/naverlogin", (req, res) => {
   });
 })
 
-
 app.listen(port, () => {
   // 서버 키는 코드
   console.log(`express is running on ${port}`);
 });
-
-
-// 0301 수정
