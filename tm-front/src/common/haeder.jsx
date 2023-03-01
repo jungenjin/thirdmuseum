@@ -1,14 +1,12 @@
 import { Navbar, NavDropdown, Nav, Container } from 'react-bootstrap';
 
 function Header() {
+    const isLogin = localStorage.getItem("login");
+    console.log("isLogin", isLogin);
     const logoutFunc = () => {
-        localStorage.removeItem("login");
-    
-        if(localStorage.getItem("login_type")) {
-          localStorage.removeItem("login_type");
-        }
-    
+        localStorage.clear();
         alert("로그아웃 되었습니다.");
+        window.location.replace('/');
       }
     return (
         <Navbar expand="lg" className="py-3">
@@ -31,8 +29,11 @@ function Header() {
                             <NavDropdown.Item href="/attention">관람 유의사항</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/notice">공지사항</Nav.Link>
-                        <Nav.Link href="/login">로그인</Nav.Link>
-                        <Nav.Link label="로그아웃" onClick={logoutFunc}>로그아웃</Nav.Link>
+                        {
+                            isLogin === null
+                            ? <Nav.Link href="/login">로그인</Nav.Link>
+                            : <Nav.Link label="로그아웃" onClick={logoutFunc}>로그아웃</Nav.Link>
+                        }   
                     </Nav>
                 </Navbar.Collapse>
             </Container>
