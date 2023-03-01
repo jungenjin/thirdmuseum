@@ -1,34 +1,18 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-// eslint-disable-next-line no-restricted-globals
-import { Link, useHistory } from "react-router-dom";
+
 import { Button } from "@rmwc/button"; // React Material 디자인 Button 컴포넌트 입니다.
 import '../style/main.css';
 
 
 function Main() {
 
-  const logoutFunc = () => {
-    localStorage.removeItem("login");
 
-    if(localStorage.getItem("login_type")) {
-      localStorage.removeItem("login_type");
-    }
-
-    alert("로그아웃 되었습니다.");
-    // eslint-disable-next-line no-restricted-globals
-    history.push("/");
-  }
   return (
     
     <div className="Main">
-                <Button
-            label="로그아웃"
-            outlined
-            className="logoutButton"
-            onClick={logoutFunc}
-          />
+
       <section className="App-Main">
         <section className="main">
         <Container fluid="xxl">
