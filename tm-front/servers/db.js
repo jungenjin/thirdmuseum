@@ -28,3 +28,30 @@ export const getRows = (sql) => {
     );
   });
 };
+
+export const getResult = (sql) => {
+  // 데이터를 추가, 입력, 삭제 등 "수정"할때 사용하는 함수 입니다.
+  return new Promise((resolve, reject) => {
+    oracledb.getConnection(
+      // 위와동일
+      {
+        user: "admin_third",
+        password: "admin_third",
+        connectString: "orcl",
+      },
+      function (err, connection) {
+        // 위와동일
+        if (err) {
+          console.error(err.message);
+          reject(err);
+          return;
+        } else {
+          connection.execute(sql).then((res) => {
+            // 위와 동일
+            resolve(res);
+          });
+        }
+      }
+    );
+  });
+};
