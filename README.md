@@ -21,6 +21,7 @@
       npm install
       
       npm start
+      
 
 ### 2. 패키지 설치
 
@@ -39,6 +40,16 @@
 + naver login 설치
 
       npm add react-login-by-naver@0.1.8
+      
++ nodemon 설치
+      
+      npm install nodemon -g
+     
+ ### 3. 리액트 서버 구동
+ 
+ + 터미널창 추가 열기
+ 
+       npm run server-start
   
 ---
 
@@ -46,7 +57,7 @@
 
 1. Oracle db에 system 계정으로 접속하여 admin_third 유저 생성 및 권한 추가
 
-      create user admin_thirdidentified by admin_third;
+      create user admin_third identified by admin_third;
       
       grant resource, connect, dba to admin_third;
       
