@@ -18,8 +18,8 @@ const Callback = () => {
   return (
       <div className="column">
         <NaverLogin
-          clientId="PckNTs2JD903WZgtj1x0"
-          callbackUrl="http://192.168.35.115:3000/management-callback"
+          clientId="n1kn5LACRmL9KXPGqhe8"
+          callbackUrl="http://192.168.0.30:3000/management-callback"
           render={(props) => <div onClick={props.onClick}></div>}
           onSuccess={(res) => responseLogin(res, "naver")}
         />
